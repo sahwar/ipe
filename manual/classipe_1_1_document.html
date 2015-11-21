@@ -77,14 +77,10 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a007132c3412a12d8e7eca62899579c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82d5d0b89ace0cc1df18d6e6506ecc6b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6ba3ce55d2ba8982cef7540e43425777284">ESaveNormal</a> = 0, 
+<tr class="memitem:a82d5d0b89ace0cc1df18d6e6506ecc6b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6ba3ce55d2ba8982cef7540e43425777284">ESaveNormal</a> = 0, 
 <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6babe2a448fac19c7ed9a2effd474d7fd41">EExport</a> = 1, 
 <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6ba5b59c1c07f53be78faa3ac0d684ecd69">ENoZip</a> = 2, 
-<a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6badc639c8f6bc3f343faf3735674b17d13">EMarkedView</a> = 4, 
-<br />
-&#160;&#160;<a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6ba21901c99cfcb1d5dc8e4821c3b5b6600">ENoColor</a> = 8
-<br />
+<a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6badc639c8f6bc3f343faf3735674b17d13">EMarkedView</a> = 4
  }</td></tr>
 <tr class="separator:a82d5d0b89ace0cc1df18d6e6506ecc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba010fd2d95f249b29a3604164b51d8f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_document.html#aba010fd2d95f249b29a3604164b51d8f">LoadErrors</a> { <a class="el" href="classipe_1_1_document.html#aba010fd2d95f249b29a3604164b51d8fa13c8bbc71da31f41dc5455a5e9200cb3">EVersionTooOld</a> = -1, 
@@ -245,9 +241,6 @@ Static Public Member Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a82d5d0b89ace0cc1df18d6e6506ecc6badc639c8f6bc3f343faf3735674b17d13"></a>EMarkedView&#160;</td><td class="fielddoc">
 <p>Create marked views only. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a82d5d0b89ace0cc1df18d6e6506ecc6ba21901c99cfcb1d5dc8e4821c3b5b6600"></a>ENoColor&#160;</td><td class="fielddoc">
-<p>No color commands in EPS output. </p>
 </td></tr>
 </table>
 
@@ -576,7 +569,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Save in a stream. </p>
 <p>Returns true if sucessful. </p>
 
-<p>References <a class="el" href="classipe_1_1_deflate_stream.html#a0c7c268bb89c1b286a33f3158c159058">ipe::DeflateStream::close()</a>, <a class="el" href="classipe_1_1_document.html#abe6c68c8a6dfb7d0160c7cd69a67b7d9">countTotalViews()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#ada6aa331539363ac1990ac6143f849c2">ipe::PdfWriter::createBookmarks()</a>, <a class="el" href="classipe_1_1_ps_writer.html#af43882152478dfadbca76dc4303ebff4">ipe::PsWriter::createHeader()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#a6642b7ed762a3374656876f5f8c32def">ipe::PdfWriter::createPages()</a>, <a class="el" href="classipe_1_1_ps_writer.html#aa39a48dec294932fc6554acdf797e2b8">ipe::PsWriter::createPageView()</a>, <a class="el" href="classipe_1_1_ps_writer.html#a708829ba9523322bfa1323c471b66dbd">ipe::PsWriter::createTrailer()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#af946225090b30c26b35fd8f3309bf23d">ipe::PdfWriter::createTrailer()</a>, <a class="el" href="classipe_1_1_ps_writer.html#abf22bc8604e2c1cafbb9dcd70bbecf60">ipe::PsWriter::createXml()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#ae12fa3cc5b03c238735a865b6e1238ec">ipe::PdfWriter::createXmlStream()</a>, <a class="el" href="classipe_1_1_document.html#a007132c3412a12d8e7eca62899579c99af11ebe09f792e106069537893ee976e1">EEps</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6babe2a448fac19c7ed9a2effd474d7fd41">EExport</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6badc639c8f6bc3f343faf3735674b17d13">EMarkedView</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6ba21901c99cfcb1d5dc8e4821c3b5b6600">ENoColor</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6ba5b59c1c07f53be78faa3ac0d684ecd69">ENoZip</a>, <a class="el" href="classipe_1_1_document.html#a007132c3412a12d8e7eca62899579c99ac8834689900f4fa773f37a4b99637946">EPdf</a>, <a class="el" href="classipe_1_1_document.html#a007132c3412a12d8e7eca62899579c99a7e229a12e07e5a968b56b3d1f8149f9f">EXml</a>, and <a class="el" href="classipe_1_1_document.html#ae84fc27ae6ff7c3db16ec0c451d6000e">saveAsXml()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_deflate_stream.html#a0c7c268bb89c1b286a33f3158c159058">ipe::DeflateStream::close()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#ada6aa331539363ac1990ac6143f849c2">ipe::PdfWriter::createBookmarks()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#a6642b7ed762a3374656876f5f8c32def">ipe::PdfWriter::createPages()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#af946225090b30c26b35fd8f3309bf23d">ipe::PdfWriter::createTrailer()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#ae12fa3cc5b03c238735a865b6e1238ec">ipe::PdfWriter::createXmlStream()</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6babe2a448fac19c7ed9a2effd474d7fd41">EExport</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6badc639c8f6bc3f343faf3735674b17d13">EMarkedView</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6ba5b59c1c07f53be78faa3ac0d684ecd69">ENoZip</a>, <a class="el" href="classipe_1_1_document.html#a007132c3412a12d8e7eca62899579c99ac8834689900f4fa773f37a4b99637946">EPdf</a>, <a class="el" href="classipe_1_1_document.html#a007132c3412a12d8e7eca62899579c99a7e229a12e07e5a968b56b3d1f8149f9f">EXml</a>, and <a class="el" href="classipe_1_1_document.html#ae84fc27ae6ff7c3db16ec0c451d6000e">saveAsXml()</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_document.html#add5e54191e6823081998928441fda19a">save()</a>.</p>
 
@@ -700,9 +693,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Export a single view to PDF or EPS. </p>
+<p>Export a single view to PDF. </p>
 
-<p>References <a class="el" href="classipe_1_1_ps_writer.html#af43882152478dfadbca76dc4303ebff4">ipe::PsWriter::createHeader()</a>, <a class="el" href="classipe_1_1_ps_writer.html#aa39a48dec294932fc6554acdf797e2b8">ipe::PsWriter::createPageView()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#aaddfec5cc4d0d0c2393ade836bae551a">ipe::PdfWriter::createPageView()</a>, <a class="el" href="classipe_1_1_ps_writer.html#a708829ba9523322bfa1323c471b66dbd">ipe::PsWriter::createTrailer()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#af946225090b30c26b35fd8f3309bf23d">ipe::PdfWriter::createTrailer()</a>, <a class="el" href="classipe_1_1_document.html#a007132c3412a12d8e7eca62899579c99af11ebe09f792e106069537893ee976e1">EEps</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6badc639c8f6bc3f343faf3735674b17d13">EMarkedView</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6ba21901c99cfcb1d5dc8e4821c3b5b6600">ENoColor</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6ba5b59c1c07f53be78faa3ac0d684ecd69">ENoZip</a>, <a class="el" href="classipe_1_1_document.html#a007132c3412a12d8e7eca62899579c99ac8834689900f4fa773f37a4b99637946">EPdf</a>, and <a class="el" href="classipe_1_1_platform.html#a7c60c7c90a8eb82d28da1c7e3c32edfc">ipe::Platform::fopen()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_pdf_writer.html#aaddfec5cc4d0d0c2393ade836bae551a">ipe::PdfWriter::createPageView()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#af946225090b30c26b35fd8f3309bf23d">ipe::PdfWriter::createTrailer()</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6badc639c8f6bc3f343faf3735674b17d13">EMarkedView</a>, <a class="el" href="classipe_1_1_document.html#a82d5d0b89ace0cc1df18d6e6506ecc6ba5b59c1c07f53be78faa3ac0d684ecd69">ENoZip</a>, <a class="el" href="classipe_1_1_document.html#a007132c3412a12d8e7eca62899579c99ac8834689900f4fa773f37a4b99637946">EPdf</a>, and <a class="el" href="classipe_1_1_platform.html#a7c60c7c90a8eb82d28da1c7e3c32edfc">ipe::Platform::fopen()</a>.</p>
 
 </div>
 </div>
@@ -734,7 +727,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="classipe_1_1_document.html#a491cab0f20eebdc074511bc3bb5a0194">countPages()</a>, <a class="el" href="classipe_1_1_string.html#a5a053d22050137196cca9cca1a4e9b42">ipe::String::empty()</a>, <a class="el" href="group__base.html#gaf2a53f87a989967e182121b628174bc1">ipe::FILE_FORMAT</a>, <a class="el" href="classipe_1_1_document.html#a94eaa4c30728cc697c64ae0d14d4cdf5">findBitmaps()</a>, <a class="el" href="structipe_1_1_document_1_1_s_properties.html#a0ee415a968d5e32ddeeb315597869b87">ipe::Document::SProperties::iAuthor</a>, <a class="el" href="classipe_1_1_bitmap_finder.html#ab15897983c18af273c30164491efa337">ipe::BitmapFinder::iBitmaps</a>, <a class="el" href="structipe_1_1_document_1_1_s_properties.html#a87fd755371355c38a39731e232560164">ipe::Document::SProperties::iCreated</a>, <a class="el" href="structipe_1_1_document_1_1_s_properties.html#ae1d0a221991d30967c94ca0d4ebd0e75">ipe::Document::SProperties::iCreator</a>, <a class="el" href="structipe_1_1_document_1_1_s_properties.html#a4139a2df86964dac77d9335133681d8d">ipe::Document::SProperties::iFullScreen</a>, <a class="el" href="structipe_1_1_document_1_1_s_properties.html#aa8b02505290e30ad943769a279d8a9ad">ipe::Document::SProperties::iKeywords</a>, <a class="el" href="structipe_1_1_document_1_1_s_properties.html#a3802881623dee1a78de4a4b5390113d7">ipe::Document::SProperties::iModified</a>, <a class="el" href="structipe_1_1_document_1_1_s_properties.html#a9f2765c5b553e78b9b6728da295893de">ipe::Document::SProperties::iNumberPages</a>, <a class="el" href="structipe_1_1_document_1_1_s_properties.html#a681e46be9bb8e4726bebc3d0ddc5721c">ipe::Document::SProperties::iPreamble</a>, <a class="el" href="structipe_1_1_document_1_1_s_properties.html#ae53fde9a5ae0efd8941e0db39c0b584c">ipe::Document::SProperties::iSubject</a>, <a class="el" href="structipe_1_1_document_1_1_s_properties.html#ad2b1945735f2ac928e6d7da9fa2a4a74">ipe::Document::SProperties::iTitle</a>, <a class="el" href="classipe_1_1_bitmap.html#acb198363ec5829b0de5137afe7173d74">ipe::Bitmap::objNum()</a>, <a class="el" href="classipe_1_1_document.html#a1cdc78a4ea1687181e1867c65e5c9132">page()</a>, <a class="el" href="classipe_1_1_stream.html#a24b435315918fb68f6326b0bde0d2aec">ipe::Stream::putXmlString()</a>, <a class="el" href="classipe_1_1_page.html#af322c2355cae440dee3c8e09513c418d">ipe::Page::saveAsXml()</a>, <a class="el" href="classipe_1_1_bitmap.html#ab36c0974290f5a8bc94514ebd07e6d3e">ipe::Bitmap::saveAsXml()</a>, and <a class="el" href="classipe_1_1_cascade.html#ae2437956346b16dd48a06858147985fd">ipe::Cascade::saveAsXml()</a>.</p>
 
-<p>Referenced by <a class="el" href="classipe_1_1_ps_writer.html#abf22bc8604e2c1cafbb9dcd70bbecf60">ipe::PsWriter::createXml()</a>, and <a class="el" href="classipe_1_1_document.html#af7db148138646754bdcb9ad2a093d379">save()</a>.</p>
+<p>Referenced by <a class="el" href="classipe_1_1_document.html#af7db148138646754bdcb9ad2a093d379">save()</a>.</p>
 
 </div>
 </div>
@@ -782,7 +775,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="classipe_1_1_document.html#a491cab0f20eebdc074511bc3bb5a0194">countPages()</a>, <a class="el" href="classipe_1_1_page.html#adcc7b16eca9a9dd96a7eb33de30cd7b9">ipe::Page::countViews()</a>, and <a class="el" href="classipe_1_1_document.html#a1cdc78a4ea1687181e1867c65e5c9132">page()</a>.</p>
 
-<p>Referenced by <a class="el" href="classipe_1_1_pdf_writer.html#af946225090b30c26b35fd8f3309bf23d">ipe::PdfWriter::createTrailer()</a>, and <a class="el" href="classipe_1_1_document.html#af7db148138646754bdcb9ad2a093d379">save()</a>.</p>
+<p>Referenced by <a class="el" href="classipe_1_1_pdf_writer.html#af946225090b30c26b35fd8f3309bf23d">ipe::PdfWriter::createTrailer()</a>.</p>
 
 </div>
 </div>
@@ -811,7 +804,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Return page (const version). </p>
 <p>The first page is no 0. </p>
 
-<p>Referenced by <a class="el" href="classipe_1_1_document.html#ac97b90e5f4008bb3df5632f967728c12">checkStyle()</a>, <a class="el" href="classipe_1_1_document.html#abe6c68c8a6dfb7d0160c7cd69a67b7d9">countTotalViews()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#ada6aa331539363ac1990ac6143f849c2">ipe::PdfWriter::createBookmarks()</a>, <a class="el" href="classipe_1_1_ps_writer.html#af43882152478dfadbca76dc4303ebff4">ipe::PsWriter::createHeader()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#a6642b7ed762a3374656876f5f8c32def">ipe::PdfWriter::createPages()</a>, <a class="el" href="classipe_1_1_ps_writer.html#aa39a48dec294932fc6554acdf797e2b8">ipe::PsWriter::createPageView()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#aaddfec5cc4d0d0c2393ade836bae551a">ipe::PdfWriter::createPageView()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#af946225090b30c26b35fd8f3309bf23d">ipe::PdfWriter::createTrailer()</a>, <a class="el" href="classipe_1_1_document.html#a7d0b29c972b2a15adad143720bcb18a9">Document()</a>, <a class="el" href="classipe_1_1_document.html#a94eaa4c30728cc697c64ae0d14d4cdf5">findBitmaps()</a>, <a class="el" href="classipe_1_1_document.html#afa4e0b819ad914ddd7694a397785de69">insert()</a>, <a class="el" href="classipe_1_1_page_selector.html#ad109e96e264320a24550fdb39daa279f">ipe::PageSelector::PageSelector()</a>, <a class="el" href="classipe_1_1_document.html#a37bb25c828f2ecc0a7fdaa0465356511">runLatex()</a>, <a class="el" href="classipe_1_1_document.html#ae84fc27ae6ff7c3db16ec0c451d6000e">saveAsXml()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a0f325331437cb832b861a205d89b85bc">ipe::CanvasBase::selectPageOrView()</a>, <a class="el" href="classipe_1_1_document.html#a947f48ea9bf0c25738cfb7a833958cb5">set()</a>, and <a class="el" href="classipe_1_1_document.html#ac2e3f62307dc22baac21ddc10fa1609c">~Document()</a>.</p>
+<p>Referenced by <a class="el" href="classipe_1_1_document.html#ac97b90e5f4008bb3df5632f967728c12">checkStyle()</a>, <a class="el" href="classipe_1_1_document.html#abe6c68c8a6dfb7d0160c7cd69a67b7d9">countTotalViews()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#ada6aa331539363ac1990ac6143f849c2">ipe::PdfWriter::createBookmarks()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#a6642b7ed762a3374656876f5f8c32def">ipe::PdfWriter::createPages()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#aaddfec5cc4d0d0c2393ade836bae551a">ipe::PdfWriter::createPageView()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#af946225090b30c26b35fd8f3309bf23d">ipe::PdfWriter::createTrailer()</a>, <a class="el" href="classipe_1_1_document.html#a7d0b29c972b2a15adad143720bcb18a9">Document()</a>, <a class="el" href="classipe_1_1_document.html#a94eaa4c30728cc697c64ae0d14d4cdf5">findBitmaps()</a>, <a class="el" href="classipe_1_1_document.html#afa4e0b819ad914ddd7694a397785de69">insert()</a>, <a class="el" href="classipe_1_1_page_selector.html#ad109e96e264320a24550fdb39daa279f">ipe::PageSelector::PageSelector()</a>, <a class="el" href="classipe_1_1_document.html#a37bb25c828f2ecc0a7fdaa0465356511">runLatex()</a>, <a class="el" href="classipe_1_1_document.html#ae84fc27ae6ff7c3db16ec0c451d6000e">saveAsXml()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a0f325331437cb832b861a205d89b85bc">ipe::CanvasBase::selectPageOrView()</a>, <a class="el" href="classipe_1_1_document.html#a947f48ea9bf0c25738cfb7a833958cb5">set()</a>, and <a class="el" href="classipe_1_1_document.html#ac2e3f62307dc22baac21ddc10fa1609c">~Document()</a>.</p>
 
 </div>
 </div>
@@ -966,7 +959,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Return document properties. </p>
 
-<p>Referenced by <a class="el" href="classipe_1_1_ps_writer.html#af43882152478dfadbca76dc4303ebff4">ipe::PsWriter::createHeader()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#af946225090b30c26b35fd8f3309bf23d">ipe::PdfWriter::createTrailer()</a>, <a class="el" href="classipe_1_1_iml_parser.html#afa54ec446c54e986e589b0123732acb4">ipe::ImlParser::parseDocument()</a>, and <a class="el" href="classipe_1_1_document.html#a37bb25c828f2ecc0a7fdaa0465356511">runLatex()</a>.</p>
+<p>Referenced by <a class="el" href="classipe_1_1_pdf_writer.html#af946225090b30c26b35fd8f3309bf23d">ipe::PdfWriter::createTrailer()</a>, <a class="el" href="classipe_1_1_iml_parser.html#afa54ec446c54e986e589b0123732acb4">ipe::ImlParser::parseDocument()</a>, and <a class="el" href="classipe_1_1_document.html#a37bb25c828f2ecc0a7fdaa0465356511">runLatex()</a>.</p>
 
 </div>
 </div>
@@ -1013,7 +1006,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Return stylesheet cascade. </p>
 
-<p>Referenced by <a class="el" href="classipe_1_1_document.html#ac97b90e5f4008bb3df5632f967728c12">checkStyle()</a>, <a class="el" href="classipe_1_1_ps_writer.html#af43882152478dfadbca76dc4303ebff4">ipe::PsWriter::createHeader()</a>, <a class="el" href="classipe_1_1_ps_writer.html#aa39a48dec294932fc6554acdf797e2b8">ipe::PsWriter::createPageView()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#aaddfec5cc4d0d0c2393ade836bae551a">ipe::PdfWriter::createPageView()</a>, <a class="el" href="classipe_1_1_iml_parser.html#afa54ec446c54e986e589b0123732acb4">ipe::ImlParser::parseDocument()</a>, <a class="el" href="classipe_1_1_thumbnail.html#a2afd466b6963c3366a7c8aa012063e1d">ipe::Thumbnail::render()</a>, <a class="el" href="classipe_1_1_document.html#a37bb25c828f2ecc0a7fdaa0465356511">runLatex()</a>, and <a class="el" href="classipe_1_1_thumbnail.html#ab8c247539fd15437f7ae39f16dd885cb">ipe::Thumbnail::Thumbnail()</a>.</p>
+<p>Referenced by <a class="el" href="classipe_1_1_document.html#ac97b90e5f4008bb3df5632f967728c12">checkStyle()</a>, <a class="el" href="classipe_1_1_pdf_writer.html#aaddfec5cc4d0d0c2393ade836bae551a">ipe::PdfWriter::createPageView()</a>, <a class="el" href="classipe_1_1_iml_parser.html#afa54ec446c54e986e589b0123732acb4">ipe::ImlParser::parseDocument()</a>, <a class="el" href="classipe_1_1_thumbnail.html#a2afd466b6963c3366a7c8aa012063e1d">ipe::Thumbnail::render()</a>, <a class="el" href="classipe_1_1_document.html#a37bb25c828f2ecc0a7fdaa0465356511">runLatex()</a>, <a class="el" href="classipe_1_1_thumbnail.html#a311ef5d81a3a77295fce0a3eaab7d5fc">ipe::Thumbnail::saveRender()</a>, and <a class="el" href="classipe_1_1_thumbnail.html#ab8c247539fd15437f7ae39f16dd885cb">ipe::Thumbnail::Thumbnail()</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1100,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Return the current FontPool. </p>
 
-<p>Referenced by <a class="el" href="classipe_1_1_ps_writer.html#af43882152478dfadbca76dc4303ebff4">ipe::PsWriter::createHeader()</a>, <a class="el" href="classipe_1_1_document.html#a14ca545e8d566ce84d2854829bf354a9">setFontPool()</a>, and <a class="el" href="classipe_1_1_thumbnail.html#ab8c247539fd15437f7ae39f16dd885cb">ipe::Thumbnail::Thumbnail()</a>.</p>
+<p>Referenced by <a class="el" href="classipe_1_1_document.html#a14ca545e8d566ce84d2854829bf354a9">setFontPool()</a>, and <a class="el" href="classipe_1_1_thumbnail.html#ab8c247539fd15437f7ae39f16dd885cb">ipe::Thumbnail::Thumbnail()</a>.</p>
 
 </div>
 </div>

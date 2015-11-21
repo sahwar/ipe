@@ -2,7 +2,7 @@
 <html>
 <!-- XML file produced from file: manual.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.3.1, Sat Oct 24 22:30:21 2015 -->
+     on Emacs 24.3.1, Sat Nov 21 16:26:38 2015 -->
 <head>
 <title>Ipe Manual -- 11 Using Ipe figures in Latex</title>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,
@@ -66,11 +66,10 @@ dl.tex-description dd {
 <div data-role="content">
 <h1>11 Using Ipe figures in Latex</h1>
 
-<p>Most Latex installations support the inclusion of figures in
-Encapsulated Postscript (EPS) format (the "Encapsulated" means that
-there is only a single Postscript page and that it contains a bounding
-box of the figure).
-<p>The standard way of including EPS figures is using the <code>graphicx</code>
+<p>If&mdash;like many Latex users nowadays&mdash;you are a user of Pdflatex you
+can include Ipe figures in PDF format in your Latex documents
+directly.
+<p>The standard way of including PDF figures is using the <code>graphicx</code>
 package. If you are not familiar with it, here is a quick overview.
 In the preamble of your document, add the declaration:
 <pre class="tex-verbatim">
@@ -82,12 +81,12 @@ with the figure filename is shown:
 <pre class="tex-verbatim">
   \usepackage[draft]{graphicx}
 </pre>
-<p>To include the figure "figure1.eps", you use the command:
+<p>To include the figure "figure1.pdf, you use the command:
 <pre class="tex-verbatim">
   \includegraphics{figs/figure1}
 </pre>
 Note that it is common <span class="tex-emph">not</span> to specify the file extension
-".eps".  The command <code>\includegraphics</code> has various options to
+".pdf".  The command <code>\includegraphics</code> has various options to
 scale and rotate the figure.  For instance, to scale the same figure
 to 50&#37;, use:
 <pre class="tex-verbatim">
@@ -105,18 +104,12 @@ given <span class="tex-emph">before</span> the <code>angle</code> argument.
   \includegraphics[scale=2,angle=45]{figs/figure1}
 </pre>
 <p>Let's stress once again that these commands are the standard commands
-for including EPS files in a LaTeX document.  Ipe files neither
-require nor support any special treatment.  If you are used to other
-commands for EPS inclusion, such as the old-fashioned <code>epsfig</code>
-package,<sup><a href="manual_53.html#id4">4</a></sup>  you can use them as well for Ipe figures.  If
-you want to know more about the LaTeX packages for including
-graphics and producing colour, check the <code>grfguide.tex</code> document
-that is probably somewhere in your TeX installation.
+for including PDF figures in a LaTeX document.  Ipe files neither
+require nor support any special treatment.  If you want to know more
+about the LaTeX packages for including graphics and producing
+colour, check the <code>grfguide.tex</code> document that is probably
+somewhere in your TeX installation.
 <p><hr />
-<p>If you are a user of Pdflatex (a version of Latex that produces PDF
-instead of DVI output), you cannot include EPS files.  Instead, save
-your Ipe figures in PDF format, and include them in the way described
-above.  
 <p>There is a slight complication here: Each page of a PDF document can
 carry several "bounding boxes", such as the <span class="tex-emph">MediaBox</span> (which
 indicates the paper size), the <span class="tex-emph">CropBox</span> (which indicates how the
@@ -135,17 +128,29 @@ pages&mdash;Acrobat Reader actually crops each page to the CropBox).
 <p>If you have a recent version of Pdflatex (1.40 or higher), you can
 actually ask Pdflatex to inspect the ArtBox by saying
 <code>\pdfpagebox5</code> in your Latex file's preamble.
-<p>You can save all your figures in both EPS and PDF format, so that you
-can run both Latex and Pdflatex on your document&mdash;when including
-figures, Latex will look for the EPS variant, while Pdflatex will look
-for the PDF variant. (Here it comes in handy that you didn't specify
-the file extension in the <code>\includegraphics</code> command.)
-<p>It would be cumbersome to have to save an Ipe figure in both formats
-each time you modify it.  What you should do instead, is to always
-save in one format&mdash;let's say EPS.  You can then write a shell script
-or batch file that calls <a href="manual_47.html">ipetoipe</a> to
-do the conversion to PDF.  Alternatively, you can enable
-auto-exporting from EPS to PDF in Ipe.
+<p><hr />
+<p>If you are still using the "original" Latex, which compiles
+documents to DVI format, you need figures in Encapsulated Postscript
+(EPS) format (the "Encapsulated" means that there is only a single
+Postscript page and that it contains a bounding box of the figure).
+Some publishers may also require that you submit figures in EPS
+format, rather than in PDF.
+<p>Ipe allows you to export your figure in EPS format, either from the
+Ipe program (<span class="tex-emph">File</span> menu, <span class="tex-emph">Export as EPS</span>), or by using the
+command line tool <span class="tex-emph">iperender</span> with the <span class="tex-tt">-eps</span> option.
+Remember to keep a copy of your original Ipe figure!  Ipe cannot read
+the exported EPS figure, you will not be able to edit this any further.
+<p>Including EPS figures works exactly like for PDF figures, using
+<code>\includegraphics</code>.  In fact you can save all your figures in
+both EPS and PDF format, so that you can run both Latex and Pdflatex
+on your document&mdash;when including figures, Latex will look for the EPS
+variant, while Pdflatex will look for the PDF variant. (Here it comes
+in handy that you didn't specify the file extension in the
+<code>\includegraphics</code> command.)
+<p>It would be cumbersome to have to export to EPS every time you modify
+and save an Ipe figure in PDF format.  What you should do instead is
+to write a shell script or batch file that calls
+<a href="manual_47.html">iperender</a> to export to EPS.
 <p><hr />
 <p>On the other hand, if you <span class="tex-emph">only</span> use Pdflatex, you might opt to
 exploit a feature of Pdflatex: You can keep all the figures for a

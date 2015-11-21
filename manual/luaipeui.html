@@ -49,15 +49,13 @@
 Global methods</h1>
 <p>There are a few global methods in the ipeui module: </p><pre class="fragment">ipeui.startBrowser(url)   -- on Win32 only
 dt = ipeui.currentDateTime() -- returns string with current date and time
-t = ipeui.local8bit(s)    -- Convert UTF-8 string s to the local encoding
 </pre><h1><a class="anchor" id="luaipeuipredialogs"></a>
 Predefined dialogs</h1>
 <p>The following are predefined dialogs. In all cases, <code>parent</code> can either be <code>nil</code> or a Window ID.</p>
 <h2><a class="anchor" id="luaipefiledialog"></a>
 File dialog</h2>
 <p>Ask the user to select a filename for opening or for saving. 'type' is "open" or "save". 'filter' is a table with the file name filters. Each filter has two entries in the table, one with the name of the filter and the extensions in parenthesis (this is used by Qt), one with the pure patterns separated by semicolons (this is also used by Windows). Here is an example: </p><pre class="fragment">filter_save = { "XML (*.ipe *.xml)", "*.ipe;*.xml",
-                "PDF (*.pdf)", "*.pdf",
-                "EPS (*.eps)", "*.eps" }
+                "PDF (*.pdf)", "*.pdf" }
 </pre><p> 'dir' is the initially selected directory, or nil.</p>
 <p>'name' is an initial name (without path) to show as the filename, or nil.</p>
 <p>'selected' is the number of the initally selected file name filter (where 1 is the first filter), or nil.</p>

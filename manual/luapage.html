@@ -198,6 +198,8 @@ fullscreen cropbox numberpages
 Other functions</h1>
 <pre class="fragment">ipe.fileFormat(filename)      -- returns one of "xml", "pdf", "eps", "ipe5", "unknown"
 ipe.fileExists(filename)      -- returns true or false
+ipe.directory(path)           -- return list of files in directory
+ipe.open(path, mode)          -- replacement for io.open
 beziers = ipe.splineToBeziers(spline, is_closed, old_style)
 ipelet = ipe.Ipelet(dllname)  -- loads C++ ipelet from absolute path
 -- returns ipelet or nil, error message

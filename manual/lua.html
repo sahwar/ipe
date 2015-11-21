@@ -93,37 +93,6 @@ for i,p in doc:pages() do
 end
 doc:save(outname)
 
-</pre><p>Here is a small Lua script that takes an Ipe document and exports each view separately in EPS format:</p>
-<pre class="fragment">-- splitviews.lua
--- export each view of an Ipe document separately
-
-if #argv ~= 1 then
-  io.stderr:write("Usage: ipescript splitviews &lt;file&gt;\n")
-  return
-end
-fname = argv[1]
-
-i = fname:find("%.[^.]+$")
-if i then
-  epsname = fname:sub(1,i-1)
-else
-  epsname = fname
-end
-
-doc = assert(ipe.Document(fname))
-
--- need latex information to save as Postscript
-assert(doc:runLatex())
-
-for i,p in doc:pages() do
-  io.stderr:write("Saving page " .. i .. "\n") 
-  for j = 1, p:countViews() do
-    out = epsname .. "-" .. i .. "-" .. j .. ".eps"
-    io.stderr:write("Saving view " .. i .. "-" .. j .. " as " .. out .. "\n") 
-    doc:exportView(out, "eps", nil, i, j)
-  end
-end
-
 </pre><p>The following script prints out all the gradients defined in a document:</p>
 <pre class="fragment">-- -*- lua -*-
 

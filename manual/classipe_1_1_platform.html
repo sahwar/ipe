@@ -81,6 +81,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:af55085039667f6f489b85d9252c03fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e2134f25977e5fdf0d616e7f98ea72"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_platform.html#ae6e2134f25977e5fdf0d616e7f98ea72">fileExists</a> (<a class="el" href="classipe_1_1_string.html">String</a> fname)</td></tr>
 <tr class="separator:ae6e2134f25977e5fdf0d616e7f98ea72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c49ac481066f99f12a418944dd3c01"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_platform.html#ad6c49ac481066f99f12a418944dd3c01">listDirectory</a> (<a class="el" href="classipe_1_1_string.html">String</a> path, std::vector&lt; <a class="el" href="classipe_1_1_string.html">String</a> &gt; &amp;files)</td></tr>
+<tr class="separator:ad6c49ac481066f99f12a418944dd3c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a32d414b2fc03a7e12df36343c79a9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classipe_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_platform.html#a54a32d414b2fc03a7e12df36343c79a9">readFile</a> (<a class="el" href="classipe_1_1_string.html">String</a> fname)</td></tr>
 <tr class="separator:a54a32d414b2fc03a7e12df36343c79a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e617096d9ad0ee2cdd8dd2254fd72ef"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_platform.html#a2e617096d9ad0ee2cdd8dd2254fd72ef">runPdfLatex</a> (<a class="el" href="classipe_1_1_string.html">String</a> dir)</td></tr>
@@ -332,6 +334,45 @@ Static Public Member Functions</h2></td></tr>
 <p>References <a class="el" href="classipe_1_1_string.html#a964635e9e0c6178d63110410ec9ab7dc">ipe::String::z()</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_platform.html#a7dbf3b615d0b35a55a0c0d144b6ec1d7">latexDirectory()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6c49ac481066f99f12a418944dd3c01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Platform::listDirectory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classipe_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classipe_1_1_string.html">String</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>files</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List all files in directory. </p>
+<p>Return true if successful, false on error. </p>
+
+<p>References <a class="el" href="classipe_1_1_string.html#a964635e9e0c6178d63110410ec9ab7dc">ipe::String::z()</a>.</p>
 
 </div>
 </div>
