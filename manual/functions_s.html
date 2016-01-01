@@ -143,6 +143,12 @@
 <li>screenFont()
 : <a class="el" href="classipe_1_1_fonts.html#af91c9c504c3441a3994ab28e336e251b">ipe::Fonts</a>
 </li>
+<li>scrollWheel
+: <a class="el" href="class_canvas.html#a37ca090da4b89ef73f90a119ea1d46dd">Canvas</a>
+</li>
+<li>secondarySelectionColor
+: <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#a5c51d8fe0233c5f32271a624fef32199">ipe::CanvasBase::Style</a>
+</li>
 <li>section()
 : <a class="el" href="classipe_1_1_page.html#a567c73e110770fcad16e225204feb230">ipe::Page</a>
 </li>
@@ -226,9 +232,6 @@
 <li>setEffect()
 : <a class="el" href="classipe_1_1_page.html#aae95d30666cbf8d5e4c9565d4ab84ee4">ipe::Page</a>
 </li>
-<li>setEncoding()
-: <a class="el" href="classipe_1_1_style_sheet.html#a4d6f3bde12a529c8bebf6b02e2484616">ipe::StyleSheet</a>
-</li>
 <li>setFifiVisible()
 : <a class="el" href="classipe_1_1_canvas_base.html#aad23eb404c3e313ff545d9656bf96327">ipe::CanvasBase</a>
 </li>
@@ -241,10 +244,6 @@
 : <a class="el" href="classipe_1_1_painter.html#ad1dc1e450c92c21103f2e8094ee7892e">ipe::Painter</a>
 , <a class="el" href="classipe_1_1_path.html#a0982ee9bfab209f5918e0af81e9889b7">ipe::Path</a>
 , <a class="el" href="classipe_1_1_style_sheet.html#aa4180331272c0a6a25c51927b83214e1">ipe::StyleSheet</a>
-</li>
-<li>setFontPool()
-: <a class="el" href="classipe_1_1_canvas_base.html#aa9b53b102974cca645339fde7140993f">ipe::CanvasBase</a>
-, <a class="el" href="classipe_1_1_document.html#a14ca545e8d566ce84d2854829bf354a9">ipe::Document</a>
 </li>
 <li>setGradient()
 : <a class="el" href="classipe_1_1_painter.html#aa776aecdd0002262cd40785990268869">ipe::Painter</a>
@@ -319,6 +318,9 @@
 <li>setPinned()
 : <a class="el" href="classipe_1_1_object.html#a09e4245a0955b4130ba8f456805322db">ipe::Object</a>
 </li>
+<li>setPosition()
+: <a class="el" href="classipe_1_1_buffer_source.html#a74e20e546cd7058ed149753d87fdd48b">ipe::BufferSource</a>
+</li>
 <li>setPreamble()
 : <a class="el" href="classipe_1_1_style_sheet.html#aee87082a00456d71f64cf6449b36264a">ipe::StyleSheet</a>
 </li>
@@ -331,8 +333,9 @@
 <li>setRenderData()
 : <a class="el" href="classipe_1_1_bitmap.html#a696160fc44b204bb4d8ebbaa5ce85c6b">ipe::Bitmap</a>
 </li>
-<li>setRetina()
-: <a class="el" href="classipe_1_1_canvas_base.html#a580de470aaf6bd9ea9a792c1e49e738c">ipe::CanvasBase</a>
+<li>setResources()
+: <a class="el" href="classipe_1_1_canvas_base.html#a634b5c5ce6ea44740e264f83b3313fb4">ipe::CanvasBase</a>
+, <a class="el" href="classipe_1_1_document.html#a08e7455de5efc61637d8eed407a957a6">ipe::Document</a>
 </li>
 <li>setSection()
 : <a class="el" href="classipe_1_1_page.html#ad28c7f44b8d771b91c9882a6f98dcf4f">ipe::Page</a>
@@ -440,9 +443,9 @@
 </li>
 <li>size()
 : <a class="el" href="classipe_1_1_bitmap.html#a87d4a8c4ff76506a1fb576c47b4e9127">ipe::Bitmap</a>
-, <a class="el" href="classipe_1_1_buffer.html#a257cbadeeba0ee33eaa76bd1b3d58d39">ipe::Buffer</a>
+, <a class="el" href="classipe_1_1_buffer.html#ac8b9d71e475bc91837f87d8c835bd962">ipe::Buffer</a>
 , <a class="el" href="classipe_1_1_reference.html#a1507982c92f7b579a25b284084cdc36c">ipe::Reference</a>
-, <a class="el" href="classipe_1_1_string.html#a025d035cd6ff7deaa9fdfa96ba39129f">ipe::String</a>
+, <a class="el" href="classipe_1_1_string.html#ac4dc47fb32490336c19f4d00002d85b6">ipe::String</a>
 , <a class="el" href="classipe_1_1_text.html#ac95c841a0d765036cea00591d8014c80">ipe::Text</a>
 </li>
 <li>sizeHint()
@@ -509,9 +512,6 @@
 <li>spline()
 : <a class="el" href="classipe_1_1_bezier.html#a7a462899ee00bc11cf13920cd52fe150">ipe::Bezier</a>
 </li>
-<li>SProperties()
-: <a class="el" href="structipe_1_1_document_1_1_s_properties.html#a14db9494bbbebb74e121a991daba4467">ipe::Document::SProperties</a>
-</li>
 <li>sqLen()
 : <a class="el" href="classipe_1_1_vector.html#ad6885e6f5ccc84c350586dc5d80ab0e3">ipe::Vector</a>
 </li>
@@ -522,15 +522,15 @@
 : <a class="el" href="classipe_1_1_bezier.html#a03ab20a149d20556a82464d3bd22b702">ipe::Bezier</a>
 </li>
 <li>stream()
-: <a class="el" href="classipe_1_1_pdf_dict.html#ad043f4a367d2b087d0a9772c5d27eb19">ipe::PdfDict</a>
+: <a class="el" href="classipe_1_1_pdf_dict.html#a7daa72f3d9c2731428986ec6bab784a6">ipe::PdfDict</a>
 </li>
 <li>string()
 : <a class="el" href="classipe_1_1_attribute.html#a0ec2c91fbac3f326c7bf88ba112954e4">ipe::Attribute</a>
-, <a class="el" href="classipe_1_1_pdf_obj.html#ab29daf65d8dc8ad63266277b16dc56c7">ipe::PdfObj</a>
-, <a class="el" href="classipe_1_1_pdf_string.html#a9a621076bfdded404b578eee13e6d617">ipe::PdfString</a>
+, <a class="el" href="classipe_1_1_pdf_obj.html#a7c7196c3a94c5993971d1ec8ba461210">ipe::PdfObj</a>
+, <a class="el" href="classipe_1_1_pdf_string.html#a0ed24a64dbfe7ac377a9a45564979b0b">ipe::PdfString</a>
 </li>
 <li>String()
-: <a class="el" href="classipe_1_1_string.html#a38b584c89d79a8b6654e8d40577695d0">ipe::String</a>
+: <a class="el" href="classipe_1_1_string.html#ac04ba7ba132892c91b45849374217c53">ipe::String</a>
 </li>
 <li>StringStream()
 : <a class="el" href="classipe_1_1_string_stream.html#aaf5882aa4ff95b0ff5fedbdd1e1fd2f3">ipe::StringStream</a>
@@ -555,7 +555,7 @@
 : <a class="el" href="classipe_1_1_shape.html#ac49664ab7626a047d51981e80e5192c2">ipe::Shape</a>
 </li>
 <li>substr()
-: <a class="el" href="classipe_1_1_string.html#a5d2bc42037447ee489350c56774e627c">ipe::String</a>
+: <a class="el" href="classipe_1_1_string.html#a50af6219ee8c0f539e887514a98bcfbc">ipe::String</a>
 </li>
 <li>SYM_FILL()
 : <a class="el" href="classipe_1_1_attribute.html#aa5fe71911312bb621b94d2fb4b81ec6b">ipe::Attribute</a>
@@ -567,7 +567,7 @@
 : <a class="el" href="classipe_1_1_attribute.html#a50a8d7f455ecba85846da8077835642c">ipe::Attribute</a>
 </li>
 <li>Symbol()
-: <a class="el" href="structipe_1_1_symbol.html#a9bb4fb952a2f62228b34fd5ff45ca108">ipe::Symbol</a>
+: <a class="el" href="structipe_1_1_symbol.html#afb9bd890652392cc1840ae0f1ee9528a">ipe::Symbol</a>
 </li>
 <li>symFill()
 : <a class="el" href="classipe_1_1_painter.html#a9255f33e36400d30ac75350b111f1164">ipe::Painter</a>

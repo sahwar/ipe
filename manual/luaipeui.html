@@ -47,7 +47,7 @@
 <div class="textblock"><p>The ipeui module provides dialogs and popup menus for Lua. It does not depend on any other Ipe component, and can be reused in other Lua projects.</p>
 <h1><a class="anchor" id="luaipeuiglobal"></a>
 Global methods</h1>
-<p>There are a few global methods in the ipeui module: </p><pre class="fragment">ipeui.startBrowser(url)   -- on Win32 only
+<p>There are a few global methods in the ipeui module: </p><pre class="fragment">ipeui.startBrowser(url)   -- on Win32 and Cocoa only
 dt = ipeui.currentDateTime() -- returns string with current date and time
 </pre><h1><a class="anchor" id="luaipeuipredialogs"></a>
 Predefined dialogs</h1>
@@ -109,6 +109,7 @@ label="string"  (Required!)
 read_only=bool
 syntax="logfile" or "xml" or "latex"
 select_all=bool
+spell_check=bool
 
 -- list and combo:
 array of list items (strings)
@@ -120,12 +121,12 @@ action= Lua method  (called when state changed)
 -- input:
 </pre><p>The argument of <em>set</em> is: </p><ul>
 <li>a string value for <em>label</em>, <em>text</em>, and <em>input</em>, </li>
-<li>a either an integer or an array of string items for <em>list</em> and <em>combo</em>, </li>
+<li>either an integer, a string, or an array of string items for <em>list</em> and <em>combo</em>, </li>
 <li>a boolean for <em>checkbox</em>.</li>
 </ul>
 <p>The result value of <em>get</em> is: </p><ul>
 <li>a string for <em>text</em> and <em>input</em>, </li>
-<li>an integer for <em>list</em> (or nil if there is no current item) or <em>combo</em>, </li>
+<li>an integer for <em>list</em> (or nil if there is no current item) and <em>combo</em>, </li>
 <li>a boolean for <em>checkbox</em>.</li>
 </ul>
 <h1><a class="anchor" id="luaipeuimenus"></a>

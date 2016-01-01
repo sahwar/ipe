@@ -61,8 +61,8 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2e5612f05ae1946acc3661ae44a6bcb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_latex.html#a2e5612f05ae1946acc3661ae44a6bcb7">Latex</a> (const <a class="el" href="classipe_1_1_cascade.html">Cascade</a> *sheet)</td></tr>
-<tr class="separator:a2e5612f05ae1946acc3661ae44a6bcb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da83ac1c6554ab16d247128c804d618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_latex.html#a3da83ac1c6554ab16d247128c804d618">Latex</a> (const <a class="el" href="classipe_1_1_cascade.html">Cascade</a> *sheet, <a class="el" href="namespaceipe.html#a41ecfe7058406d53875c800a248db4ec">LatexType</a> latexType)</td></tr>
+<tr class="separator:a3da83ac1c6554ab16d247128c804d618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5695bc8696d6c7aa28baba8c925d69fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_latex.html#a5695bc8696d6c7aa28baba8c925d69fe">~Latex</a> ()</td></tr>
 <tr class="separator:a5695bc8696d6c7aa28baba8c925d69fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafcaa7bca4a691227e3602a4b77b75c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_latex.html#aafcaa7bca4a691227e3602a4b77b75c2">scanObject</a> (const <a class="el" href="classipe_1_1_object.html">Object</a> *obj)</td></tr>
@@ -75,8 +75,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aace4351a64a0942e6c899bf8f0581ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42b13876e28dc3d7a2b06cfd400500f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_latex.html#ac42b13876e28dc3d7a2b06cfd400500f">updateTextObjects</a> ()</td></tr>
 <tr class="separator:ac42b13876e28dc3d7a2b06cfd400500f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a39a3deb365b27cd86b8eb248fce64d"><td class="memItemLeft" align="right" valign="top">FontPool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_latex.html#a8a39a3deb365b27cd86b8eb248fce64d">takeFontPool</a> ()</td></tr>
-<tr class="separator:a8a39a3deb365b27cd86b8eb248fce64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8c555810ecb16e457df51a123d0604"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classipe_1_1_pdf_resources.html">PdfResources</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_latex.html#abc8c555810ecb16e457df51a123d0604">takeResources</a> ()</td></tr>
+<tr class="separator:abc8c555810ecb16e457df51a123d0604"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -87,7 +87,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p><a class="el" href="classipe_1_1_object.html" title="Base class for all Ipe objects, composite or leaf. ">Object</a> that converts latex source to PDF format. </p>
 <p>This object is responsible for creating the PDF representation of text objects. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2e5612f05ae1946acc3661ae44a6bcb7"></a>
+<a class="anchor" id="a3da83ac1c6554ab16d247128c804d618"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -95,8 +95,18 @@ Friends</h2></td></tr>
           <td class="memname">Latex::Latex </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classipe_1_1_cascade.html">Cascade</a> *&#160;</td>
-          <td class="paramname"><em>sheet</em></td><td>)</td>
+          <td class="paramname"><em>sheet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespaceipe.html#a41ecfe7058406d53875c800a248db4ec">LatexType</a>&#160;</td>
+          <td class="paramname"><em>latexType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -191,7 +201,7 @@ Friends</h2></td></tr>
 <p>Create a <a class="el" href="classipe_1_1_latex.html" title="Object that converts latex source to PDF format. ">Latex</a> source file with all the text objects collected before. The client should have prepared a directory for the Pdflatex run, and pass the name of the <a class="el" href="classipe_1_1_latex.html" title="Object that converts latex source to PDF format. ">Latex</a> source file to be written by <a class="el" href="classipe_1_1_latex.html" title="Object that converts latex source to PDF format. ">Latex</a>.</p>
 <p>Returns the number of text objects that did not yet have an XForm, or a negative error code. </p>
 
-<p>References <a class="el" href="group__geo.html#gaa7157387960a1e502bc329738c3c1023">ipe::abs()</a>, <a class="el" href="classipe_1_1_cascade.html#a08a6814ca3b4e35815675bffa21c9c2b">ipe::Cascade::allNames()</a>, <a class="el" href="classipe_1_1_attribute.html#a585441870cee664ba79decaf454f3a3b">ipe::Attribute::color()</a>, <a class="el" href="group__attr.html#gga4687dc25ac49588fa3b339079972944aa68b3e654fef81ecee45944a8f28a6697">ipe::EColor</a>, <a class="el" href="group__attr.html#gga4687dc25ac49588fa3b339079972944aa8d9e2b9fa4352f55d5982bf3cad91041">ipe::ETextSize</a>, <a class="el" href="group__attr.html#gga4687dc25ac49588fa3b339079972944aa384d0272558c3e4d187e51473e179551">ipe::ETextStretch</a>, <a class="el" href="group__attr.html#gga4687dc25ac49588fa3b339079972944aafb7b4a6168e030623355a784d43873cb">ipe::ETextStyle</a>, <a class="el" href="classipe_1_1_cascade.html#a063cda03410946f4f76f5fd706def4a5">ipe::Cascade::find()</a>, <a class="el" href="classipe_1_1_cascade.html#ac1a88673f40dfb7b5728ef75c13fdbc7">ipe::Cascade::findPreamble()</a>, <a class="el" href="classipe_1_1_text.html#a1f9a201ef75d0da103df45fc79927f88">ipe::Text::getXForm()</a>, <a class="el" href="classipe_1_1_color.html#a8ea32377c79b428ca1f40a1211b1e07b">ipe::Color::iBlue</a>, <a class="el" href="classipe_1_1_color.html#ab51fa1a023b54733615c744629cf7fdc">ipe::Color::iGreen</a>, <a class="el" href="classipe_1_1_color.html#a47c7eb01409d55f5be7420828eb24125">ipe::Color::iRed</a>, <a class="el" href="classipe_1_1_color.html#a283527bdc57ee070cea88bfbec4477d6">ipe::Color::isGray()</a>, <a class="el" href="classipe_1_1_text.html#aa078c226d557c2f86f2ef971d458cee3">ipe::Text::isMinipage()</a>, <a class="el" href="classipe_1_1_attribute.html#aefe6243adfcc783f54ee8163f69cd016">ipe::Attribute::isNumber()</a>, <a class="el" href="classipe_1_1_fixed.html#ab5697e33f371d1a802e91c2ba28d4b8a">ipe::Fixed::mult()</a>, <a class="el" href="classipe_1_1_attribute.html#aabf1af360e03a70725b30aeb80b33b54">ipe::Attribute::number()</a>, <a class="el" href="classipe_1_1_string.html#a025d035cd6ff7deaa9fdfa96ba39129f">ipe::String::size()</a>, <a class="el" href="classipe_1_1_attribute.html#a0ec2c91fbac3f326c7bf88ba112954e4">ipe::Attribute::string()</a>, <a class="el" href="classipe_1_1_text.html#a30a9690643a877eecf2522f8997e611b">ipe::Text::style()</a>, <a class="el" href="classipe_1_1_string.html#a5d2bc42037447ee489350c56774e627c">ipe::String::substr()</a>, <a class="el" href="classipe_1_1_text.html#a2df78233bd690849121e0f5796b0bdf3">ipe::Text::text()</a>, <a class="el" href="classipe_1_1_fixed.html#ac454db654175aefec465834df70f998d">ipe::Fixed::toDouble()</a>, <a class="el" href="classipe_1_1_string.html#a5c4533ae4f17acb2735761e8ff83185d">ipe::String::unicode()</a>, and <a class="el" href="classipe_1_1_text.html#a289be05a49aa7de45ed7d5b0a3dbeb8f">ipe::Text::width()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_cascade.html#a08a6814ca3b4e35815675bffa21c9c2b">ipe::Cascade::allNames()</a>, <a class="el" href="classipe_1_1_attribute.html#a585441870cee664ba79decaf454f3a3b">ipe::Attribute::color()</a>, <a class="el" href="group__attr.html#gga4687dc25ac49588fa3b339079972944aa68b3e654fef81ecee45944a8f28a6697">ipe::EColor</a>, <a class="el" href="group__attr.html#gga4687dc25ac49588fa3b339079972944aa8d9e2b9fa4352f55d5982bf3cad91041">ipe::ETextSize</a>, <a class="el" href="group__attr.html#gga4687dc25ac49588fa3b339079972944aa384d0272558c3e4d187e51473e179551">ipe::ETextStretch</a>, <a class="el" href="group__attr.html#gga4687dc25ac49588fa3b339079972944aafb7b4a6168e030623355a784d43873cb">ipe::ETextStyle</a>, <a class="el" href="classipe_1_1_cascade.html#a063cda03410946f4f76f5fd706def4a5">ipe::Cascade::find()</a>, <a class="el" href="classipe_1_1_cascade.html#ac1a88673f40dfb7b5728ef75c13fdbc7">ipe::Cascade::findPreamble()</a>, <a class="el" href="classipe_1_1_text.html#a1f9a201ef75d0da103df45fc79927f88">ipe::Text::getXForm()</a>, <a class="el" href="classipe_1_1_color.html#a8ea32377c79b428ca1f40a1211b1e07b">ipe::Color::iBlue</a>, <a class="el" href="classipe_1_1_color.html#ab51fa1a023b54733615c744629cf7fdc">ipe::Color::iGreen</a>, <a class="el" href="classipe_1_1_color.html#a47c7eb01409d55f5be7420828eb24125">ipe::Color::iRed</a>, <a class="el" href="classipe_1_1_color.html#a283527bdc57ee070cea88bfbec4477d6">ipe::Color::isGray()</a>, <a class="el" href="classipe_1_1_text.html#aa078c226d557c2f86f2ef971d458cee3">ipe::Text::isMinipage()</a>, <a class="el" href="classipe_1_1_attribute.html#aefe6243adfcc783f54ee8163f69cd016">ipe::Attribute::isNumber()</a>, <a class="el" href="classipe_1_1_fixed.html#ab5697e33f371d1a802e91c2ba28d4b8a">ipe::Fixed::mult()</a>, <a class="el" href="classipe_1_1_attribute.html#aabf1af360e03a70725b30aeb80b33b54">ipe::Attribute::number()</a>, <a class="el" href="classipe_1_1_string.html#ac4dc47fb32490336c19f4d00002d85b6">ipe::String::size()</a>, <a class="el" href="classipe_1_1_attribute.html#a0ec2c91fbac3f326c7bf88ba112954e4">ipe::Attribute::string()</a>, <a class="el" href="classipe_1_1_text.html#a30a9690643a877eecf2522f8997e611b">ipe::Text::style()</a>, <a class="el" href="classipe_1_1_string.html#a50af6219ee8c0f539e887514a98bcfbc">ipe::String::substr()</a>, <a class="el" href="classipe_1_1_text.html#a2df78233bd690849121e0f5796b0bdf3">ipe::Text::text()</a>, <a class="el" href="classipe_1_1_fixed.html#ac454db654175aefec465834df70f998d">ipe::Fixed::toDouble()</a>, and <a class="el" href="classipe_1_1_text.html#a289be05a49aa7de45ed7d5b0a3dbeb8f">ipe::Text::width()</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_document.html#a37bb25c828f2ecc0a7fdaa0465356511">ipe::Document::runLatex()</a>.</p>
 
@@ -214,7 +224,7 @@ Friends</h2></td></tr>
 <p>Read the PDF file created by Pdflatex. </p>
 <p>Must have performed the call to Pdflatex, and pass the name of the resulting output file. </p>
 
-<p>References <a class="el" href="classipe_1_1_pdf_dict.html#a094829d232a6b7cdd4a56b31554407cc">ipe::PdfDict::count()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a569aa3b088a98d6acb0cb13e58e27cc3">ipe::PdfObj::dict()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#af5985f2de6a032a75c00d30ef1a503d3">ipe::PdfDict::get()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#a438900ee13ef19187854236cbf2e3698">ipe::PdfDict::key()</a>, <a class="el" href="classipe_1_1_pdf_file.html#a42cb14eabcee94d8a3ba4414c21576d2">ipe::PdfFile::page()</a>, and <a class="el" href="classipe_1_1_pdf_file.html#aa294d4db24fb4506fceb5190840442e1">ipe::PdfFile::parse()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_pdf_obj.html#a3176173922b75ed7da480e206eb57910">ipe::PdfObj::array()</a>, <a class="el" href="classipe_1_1_pdf_array.html#a8f48113983a1120fd65f56cb41e7c843">ipe::PdfArray::count()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#add9074b4888540707e84f102739f61b2">ipe::PdfDict::count()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a83aa385423b91ff923857ab3da0ac483">ipe::PdfObj::dict()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#a7603322af37d8bfd3816cff90e647a55">ipe::PdfDict::get()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#a13ec23f71743e4313fbe61715023c6b4">ipe::PdfDict::key()</a>, <a class="el" href="classipe_1_1_pdf_array.html#a26f320a64e2aaf9764ef72d60164c3ef">ipe::PdfArray::obj()</a>, <a class="el" href="classipe_1_1_pdf_file.html#a1841e1a140b2772ed31573050303d6bc">ipe::PdfFile::page()</a>, and <a class="el" href="classipe_1_1_pdf_file.html#aa294d4db24fb4506fceb5190840442e1">ipe::PdfFile::parse()</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_document.html#a37bb25c828f2ecc0a7fdaa0465356511">ipe::Document::runLatex()</a>.</p>
 
@@ -240,12 +250,12 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8a39a3deb365b27cd86b8eb248fce64d"></a>
+<a class="anchor" id="abc8c555810ecb16e457df51a123d0604"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">FontPool * Latex::takeFontPool </td>
+          <td class="memname"><a class="el" href="classipe_1_1_pdf_resources.html">PdfResources</a> * Latex::takeResources </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -253,7 +263,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the newly created font pool and pass ownership of pool to caller. </p>
+<p>Return the newly created <a class="el" href="classipe_1_1_pdf_resources.html" title="All the resources needed by the text objects in the document. ">PdfResources</a> and pass ownership to caller. </p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_document.html#a37bb25c828f2ecc0a7fdaa0465356511">ipe::Document::runLatex()</a>.</p>
 

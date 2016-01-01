@@ -118,8 +118,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_fixed.html">Fixed</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structipe_1_1_font.html">Font</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_fonts.html">Fonts</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structipe_1_1_gradient.html">Gradient</a></td></tr>
@@ -186,6 +184,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_ref.html">PdfRef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html">PdfResources</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_string.html">PdfString</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structipe_1_1_pdf_token.html">PdfToken</a></td></tr>
@@ -251,6 +251,8 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga724109aa4dbab072ea067cc5ed471e02"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="classipe_1_1_attribute.html">Attribute</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__attr.html#ga724109aa4dbab072ea067cc5ed471e02">AttributeSeq</a></td></tr>
 <tr class="separator:ga724109aa4dbab072ea067cc5ed471e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2699635dc6dc049fb8fad5021483889"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceipe.html#ac2699635dc6dc049fb8fad5021483889">PdfRenumber</a> = std::unordered_map&lt; int, int &gt;</td></tr>
+<tr class="separator:ac2699635dc6dc049fb8fad5021483889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -363,6 +365,22 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__attr.html#gga8c1edaea1ba2aa857409e4bcf52e73bfae93c82417df80bf565dc4ff4e5a0b58f">ESecondarySelected</a>
  }</td></tr>
 <tr class="separator:ga8c1edaea1ba2aa857409e4bcf52e73bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ecfe7058406d53875c800a248db4ec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceipe.html#a41ecfe7058406d53875c800a248db4ec">LatexType</a> { <a class="el" href="namespaceipe.html#a41ecfe7058406d53875c800a248db4eca7a1920d61156abc05a60135aefe8bc67">LatexType::Default</a>, 
+<a class="el" href="namespaceipe.html#a41ecfe7058406d53875c800a248db4ecaffca379b2c28300737c04d55c32fcc65">LatexType::Pdftex</a>, 
+<a class="el" href="namespaceipe.html#a41ecfe7058406d53875c800a248db4ecac4a21b2d44b43920d97042f41633b503">LatexType::Xetex</a>, 
+<a class="el" href="namespaceipe.html#a41ecfe7058406d53875c800a248db4ecaf19176018d7969b6d949df6702b1d185">LatexType::Luatex</a>
+ }</td></tr>
+<tr class="separator:a41ecfe7058406d53875c800a248db4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39cd6f4738bc944cbb17e8233ac9ab06"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06">FontType</a> { <br />
+&#160;&#160;<a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a3fc8355f4568d0bc9fa60829e4db7ad8">FontType::Type1</a>, 
+<a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a9bff7ccc79192952c13923baa8b14d01">FontType::Truetype</a>, 
+<a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a73d7ba8480764d8f4be9adee2418c82a">FontType::CIDType0</a>, 
+<a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a2c75648597d6bb85f9eacf3a3b8c10b9">FontType::CIDType2</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06ab4080bdf74febf04d578ff105cce9d3f">FontType::Unsupported</a>
+<br />
+ }</td></tr>
+<tr class="separator:a39cd6f4738bc944cbb17e8233ac9ab06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -391,13 +409,89 @@ Variables</h2></td></tr>
 <tr class="separator:ga326090a31da49985b41a7935d35e79bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2597e55464c9eb730bc0ec928f05cf5b"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__attr.html#ga2597e55464c9eb730bc0ec928f05cf5b">property_names</a> []</td></tr>
 <tr class="separator:ga2597e55464c9eb730bc0ec928f05cf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga63fb9a4c5352670e3c1fa6ae2df310b6"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__base.html#ga63fb9a4c5352670e3c1fa6ae2df310b6">IPELIB_VERSION</a> = 70110</td></tr>
+<tr class="memitem:ga63fb9a4c5352670e3c1fa6ae2df310b6"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__base.html#ga63fb9a4c5352670e3c1fa6ae2df310b6">IPELIB_VERSION</a> = 70201</td></tr>
 <tr class="separator:ga63fb9a4c5352670e3c1fa6ae2df310b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1382a12138719bc823934b30ea6fcb24"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__base.html#ga1382a12138719bc823934b30ea6fcb24">OLDEST_FILE_FORMAT</a> = 70000</td></tr>
 <tr class="separator:ga1382a12138719bc823934b30ea6fcb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf2a53f87a989967e182121b628174bc1"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__base.html#gaf2a53f87a989967e182121b628174bc1">FILE_FORMAT</a> = 70107</td></tr>
 <tr class="separator:gaf2a53f87a989967e182121b628174bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ac2699635dc6dc049fb8fad5021483889"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceipe.html#ac2699635dc6dc049fb8fad5021483889">ipe::PdfRenumber</a> = typedef std::unordered_map&lt;int,int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a41ecfe7058406d53875c800a248db4ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceipe.html#a41ecfe7058406d53875c800a248db4ec">ipe::LatexType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a41ecfe7058406d53875c800a248db4eca7a1920d61156abc05a60135aefe8bc67"></a>Default&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41ecfe7058406d53875c800a248db4ecaffca379b2c28300737c04d55c32fcc65"></a>Pdftex&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41ecfe7058406d53875c800a248db4ecac4a21b2d44b43920d97042f41633b503"></a>Xetex&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41ecfe7058406d53875c800a248db4ecaf19176018d7969b6d949df6702b1d185"></a>Luatex&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a39cd6f4738bc944cbb17e8233ac9ab06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06">ipe::FontType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a39cd6f4738bc944cbb17e8233ac9ab06a3fc8355f4568d0bc9fa60829e4db7ad8"></a>Type1&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a39cd6f4738bc944cbb17e8233ac9ab06a9bff7ccc79192952c13923baa8b14d01"></a>Truetype&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a39cd6f4738bc944cbb17e8233ac9ab06a73d7ba8480764d8f4be9adee2418c82a"></a>CIDType0&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a39cd6f4738bc944cbb17e8233ac9ab06a2c75648597d6bb85f9eacf3a3b8c10b9"></a>CIDType2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a39cd6f4738bc944cbb17e8233ac9ab06ab4080bdf74febf04d578ff105cce9d3f"></a>Unsupported&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="afeabbcee2d1f6af57026f7d927e9a3b8"></a>
 <div class="memitem">
@@ -473,7 +567,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classipe_1_1_string.html#a964635e9e0c6178d63110410ec9ab7dc">ipe::String::z()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_string.html#a7a8bab5b55242851ca7b08cc527d294e">ipe::String::z()</a>.</p>
 
 </div>
 </div>

@@ -1219,7 +1219,7 @@ Friends</h2></td></tr>
 
 <p>References <a class="el" href="classipe_1_1_attribute.html#a6b36c5d821c82e33379584c9fc69854e">Attribute()</a>.</p>
 
-<p>Referenced by <a class="el" href="classipe_1_1_document.html#a83cb664fe9e632cb134cb01eedb04900">ipe::Document::hasTransparency()</a>, <a class="el" href="classipe_1_1_attribute.html#a4a6e58b5f73eec649c141d553b1e4ac5">normal()</a>, <a class="el" href="classipe_1_1_reference.html#a2246d3b6c06b1e7f8e1e450162d2a4c6">ipe::Reference::Reference()</a>, and <a class="el" href="classipe_1_1_reference.html#a4010db98b951afc29f2123d2bec2d7b8">ipe::Reference::saveAsXml()</a>.</p>
+<p>Referenced by <a class="el" href="classipe_1_1_attribute.html#a4a6e58b5f73eec649c141d553b1e4ac5">normal()</a>, <a class="el" href="classipe_1_1_reference.html#a2246d3b6c06b1e7f8e1e450162d2a4c6">ipe::Reference::Reference()</a>, and <a class="el" href="classipe_1_1_reference.html#a4010db98b951afc29f2123d2bec2d7b8">ipe::Reference::saveAsXml()</a>.</p>
 
 </div>
 </div>
@@ -1631,7 +1631,7 @@ Friends</h2></td></tr>
 <p>Make a color attribute. </p>
 <p>If the string starts with a letter, make a symbolic attribute. Otherwise, it's either a single gray value (0.0 to 1.0), or the three red, green, and blue components, separated by spaces. If it's an empty string, return <em>deflt</em>. </p>
 
-<p>References <a class="el" href="classipe_1_1_attribute.html#a6b36c5d821c82e33379584c9fc69854e">Attribute()</a>, and <a class="el" href="classipe_1_1_string.html#aa8ad780569e40cc86c1afb0475910c57">ipe::String::isEmpty()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_attribute.html#a6b36c5d821c82e33379584c9fc69854e">Attribute()</a>, and <a class="el" href="classipe_1_1_string.html#a6a7f4ac3af91acadf8640c30db92a41a">ipe::String::empty()</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_pdf_painter.html#a89af8f32695d045440818a89a89d96f2">ipe::PdfPainter::doDrawText()</a>, <a class="el" href="classipe_1_1_iml_parser.html#a7b00d20e593c619e1908c49a0c23c0c2">ipe::ImlParser::parseStyle()</a>, <a class="el" href="classipe_1_1_reference.html#a2246d3b6c06b1e7f8e1e450162d2a4c6">ipe::Reference::Reference()</a>, and <a class="el" href="classipe_1_1_text.html#a5ca9a3321b4277d45b9f80f9f317772a">ipe::Text::Text()</a>.</p>
 
@@ -1672,7 +1672,7 @@ Friends</h2></td></tr>
 <p>Make a scalar attribute. </p>
 <p>If <em>str</em> is empty, simply return <em>deflt</em>. If <em>str</em> starts with a letter, make a symbolic attribute. Otherwise, must be a number. </p>
 
-<p>References <a class="el" href="classipe_1_1_attribute.html#a6b36c5d821c82e33379584c9fc69854e">Attribute()</a>, and <a class="el" href="classipe_1_1_string.html#aa8ad780569e40cc86c1afb0475910c57">ipe::String::isEmpty()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_attribute.html#a6b36c5d821c82e33379584c9fc69854e">Attribute()</a>, and <a class="el" href="classipe_1_1_string.html#a6a7f4ac3af91acadf8640c30db92a41a">ipe::String::empty()</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_pdf_painter.html#a89af8f32695d045440818a89a89d96f2">ipe::PdfPainter::doDrawText()</a>, <a class="el" href="classipe_1_1_iml_parser.html#a7b00d20e593c619e1908c49a0c23c0c2">ipe::ImlParser::parseStyle()</a>, and <a class="el" href="classipe_1_1_reference.html#a2246d3b6c06b1e7f8e1e450162d2a4c6">ipe::Reference::Reference()</a>.</p>
 
@@ -1703,7 +1703,7 @@ Friends</h2></td></tr>
 <p>Construct dash style attribute from string. </p>
 <p>Strings starting with '[' create an absolute dash style. The empty string is equivalent to 'normal'. Any other string creates a symbolic dash style. </p>
 
-<p>References <a class="el" href="classipe_1_1_attribute.html#a6b36c5d821c82e33379584c9fc69854e">Attribute()</a>, <a class="el" href="classipe_1_1_string.html#aa8ad780569e40cc86c1afb0475910c57">ipe::String::isEmpty()</a>, and <a class="el" href="classipe_1_1_attribute.html#a71bb701d014c2c45062867027d9492c1">NORMAL()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_attribute.html#a6b36c5d821c82e33379584c9fc69854e">Attribute()</a>, <a class="el" href="classipe_1_1_string.html#a6a7f4ac3af91acadf8640c30db92a41a">ipe::String::empty()</a>, and <a class="el" href="classipe_1_1_attribute.html#a71bb701d014c2c45062867027d9492c1">NORMAL()</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_iml_parser.html#a7b00d20e593c619e1908c49a0c23c0c2">ipe::ImlParser::parseStyle()</a>.</p>
 
@@ -1734,7 +1734,7 @@ Friends</h2></td></tr>
 <p>Construct text size attribute from string. </p>
 <p><a class="el" href="classipe_1_1_string.html" title="Strings and buffers. ">String</a> starting with digit creates a numeric absolute value, string starting with letter creates symbolic text size, anything else creates absolute (string) text size. The empty string is treated like "normal". </p>
 
-<p>References <a class="el" href="classipe_1_1_attribute.html#a6b36c5d821c82e33379584c9fc69854e">Attribute()</a>, <a class="el" href="classipe_1_1_string.html#a5a053d22050137196cca9cca1a4e9b42">ipe::String::empty()</a>, and <a class="el" href="classipe_1_1_attribute.html#a71bb701d014c2c45062867027d9492c1">NORMAL()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_attribute.html#a6b36c5d821c82e33379584c9fc69854e">Attribute()</a>, <a class="el" href="classipe_1_1_string.html#a6a7f4ac3af91acadf8640c30db92a41a">ipe::String::empty()</a>, and <a class="el" href="classipe_1_1_attribute.html#a71bb701d014c2c45062867027d9492c1">NORMAL()</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_iml_parser.html#a7b00d20e593c619e1908c49a0c23c0c2">ipe::ImlParser::parseStyle()</a>, and <a class="el" href="classipe_1_1_text.html#a5ca9a3321b4277d45b9f80f9f317772a">ipe::Text::Text()</a>.</p>
 
