@@ -71,10 +71,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac3d0a3f371caaf7211f8e449459c9971"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#ac3d0a3f371caaf7211f8e449459c9971">TModifiers</a> { <a class="el" href="classipe_1_1_canvas_base.html#ac3d0a3f371caaf7211f8e449459c9971a4c8337fd2b08eeb02bdd3cbb4b4ab535">EShift</a> = 0x100, 
+<tr class="memitem:ac3d0a3f371caaf7211f8e449459c9971"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#ac3d0a3f371caaf7211f8e449459c9971">TModifiers</a> { <br />
+&#160;&#160;<a class="el" href="classipe_1_1_canvas_base.html#ac3d0a3f371caaf7211f8e449459c9971a4c8337fd2b08eeb02bdd3cbb4b4ab535">EShift</a> = 0x100, 
 <a class="el" href="classipe_1_1_canvas_base.html#ac3d0a3f371caaf7211f8e449459c9971aaf9b204c4da8e0a76279547eca023f8f">EControl</a> = 0x200, 
 <a class="el" href="classipe_1_1_canvas_base.html#ac3d0a3f371caaf7211f8e449459c9971a3ef9919d52a09bc59b59e3ec4960e158">EAlt</a> = 0x400, 
-<a class="el" href="classipe_1_1_canvas_base.html#ac3d0a3f371caaf7211f8e449459c9971acf96f670db08898efd0a467980b28f27">EMeta</a> = 0x800
+<a class="el" href="classipe_1_1_canvas_base.html#ac3d0a3f371caaf7211f8e449459c9971acf96f670db08898efd0a467980b28f27">EMeta</a> = 0x800, 
+<br />
+&#160;&#160;<a class="el" href="classipe_1_1_canvas_base.html#ac3d0a3f371caaf7211f8e449459c9971aab54a254e21537030a8ecd187e73affa">ECommand</a> = 0x1000
+<br />
  }</td></tr>
 <tr class="separator:ac3d0a3f371caaf7211f8e449459c9971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba2bde807b40cfa7e573bc4fe6bc74d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#aba2bde807b40cfa7e573bc4fe6bc74d3">TCursor</a> { <a class="el" href="classipe_1_1_canvas_base.html#aba2bde807b40cfa7e573bc4fe6bc74d3a1c9e8f93c8dbc44eae03cb15e7d42ead">EStandardCursor</a>, 
@@ -223,10 +227,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a154915cfa06531478741167918c2d623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4c3a49d78fe1d957d3d1f944f52672"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#afd4c3a49d78fe1d957d3d1f944f52672">iRepaintObjects</a></td></tr>
 <tr class="separator:afd4c3a49d78fe1d957d3d1f944f52672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8eaee237331f2001c3b0d7521d1fd5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#ac8eaee237331f2001c3b0d7521d1fd5f">iWidth</a></td></tr>
-<tr class="separator:ac8eaee237331f2001c3b0d7521d1fd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e2cbbeb7cb7e342e57d3e37c491bc72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#a1e2cbbeb7cb7e342e57d3e37c491bc72">iHeight</a></td></tr>
-<tr class="separator:a1e2cbbeb7cb7e342e57d3e37c491bc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777194170193a53d4d752af38ef6d10f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#a777194170193a53d4d752af38ef6d10f">iWidth</a></td></tr>
+<tr class="separator:a777194170193a53d4d752af38ef6d10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40cef0de204a5661f793b1358aed510"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#af40cef0de204a5661f793b1358aed510">iHeight</a></td></tr>
+<tr class="separator:af40cef0de204a5661f793b1358aed510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef75032e9ac2cc7fc166f69bffc788f4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#aef75032e9ac2cc7fc166f69bffc788f4">iBWidth</a></td></tr>
+<tr class="separator:aef75032e9ac2cc7fc166f69bffc788f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88703afeec84d275c46f4761925453df"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#a88703afeec84d275c46f4761925453df">iBHeight</a></td></tr>
+<tr class="separator:a88703afeec84d275c46f4761925453df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefb13c8b7ad6798ce0b77d9e9be84ac0"><td class="memItemLeft" align="right" valign="top">cairo_surface_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#aefb13c8b7ad6798ce0b77d9e9be84ac0">iSurface</a></td></tr>
 <tr class="separator:aefb13c8b7ad6798ce0b77d9e9be84ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a108fb2a2aca046094de908eda7dcdc2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classipe_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_canvas_base.html#a108fb2a2aca046094de908eda7dcdc2c">iUnsnappedMousePos</a></td></tr>
@@ -266,6 +274,8 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ac3d0a3f371caaf7211f8e449459c9971a3ef9919d52a09bc59b59e3ec4960e158"></a>EAlt&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ac3d0a3f371caaf7211f8e449459c9971acf96f670db08898efd0a467980b28f27"></a>EMeta&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac3d0a3f371caaf7211f8e449459c9971aab54a254e21537030a8ecd187e73affa"></a>ECommand&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -520,7 +530,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Return center of canvas. </p>
 
-<p>References <a class="el" href="classipe_1_1_canvas_base.html#a1e2cbbeb7cb7e342e57d3e37c491bc72">iHeight</a>, and <a class="el" href="classipe_1_1_canvas_base.html#ac8eaee237331f2001c3b0d7521d1fd5f">iWidth</a>.</p>
+<p>References <a class="el" href="classipe_1_1_canvas_base.html#af40cef0de204a5661f793b1358aed510">iHeight</a>, and <a class="el" href="classipe_1_1_canvas_base.html#a777194170193a53d4d752af38ef6d10f">iWidth</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_canvas_base.html#abab4e9d5c08b7a522f9aaa18ec38a205">canvasTfm()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a321b17d822c85b1eb71e7e0a68a6e9b5">devToUser()</a>, and <a class="el" href="classipe_1_1_canvas_base.html#ada934a18010c8c704d36777af6deecd2">userToDev()</a>.</p>
 
@@ -1121,7 +1131,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classipe_1_1_canvas_base.html#ac8eaee237331f2001c3b0d7521d1fd5f">iWidth</a>.</p>
+<p>References <a class="el" href="classipe_1_1_canvas_base.html#a777194170193a53d4d752af38ef6d10f">iWidth</a>.</p>
 
 </div>
 </div>
@@ -1146,7 +1156,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classipe_1_1_canvas_base.html#a1e2cbbeb7cb7e342e57d3e37c491bc72">iHeight</a>.</p>
+<p>References <a class="el" href="classipe_1_1_canvas_base.html#af40cef0de204a5661f793b1358aed510">iHeight</a>.</p>
 
 </div>
 </div>
@@ -1256,6 +1266,8 @@ Protected Attributes</h2></td></tr>
 <p><em>itemWidth</em> is the width of the page thumbnails (the height is computed automatically).</p>
 <p>If <em>page</em> is negative (the default), shows thumbnails of all pages of the document in a dialog. If the user selects a page, the page number is returned. If the dialog is canceled, -1 is returned.</p>
 <p>If <em>page</em> is non-negative, all views of this page are shown, and the selected view number is returned. </p>
+
+<p>References <a class="el" href="classipe_1_1_thumbnail.html#a596066bf7633522ec287bfabb70e99eb">ipe::Thumbnail::height()</a>, and <a class="el" href="classipe_1_1_thumbnail.html#ae9798a7399310c1e31e3274af1cf3b48">ipe::Thumbnail::width()</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1397,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classipe_1_1_snap.html#ac580ab8d8536f7e31f6bae5c978de5de">ipe::Snap::iAngleSize</a>, <a class="el" href="classipe_1_1_snap.html#a7ed82af38bcec0c698080103924e6720">ipe::Snap::iDir</a>, <a class="el" href="classipe_1_1_canvas_base.html#a1e2cbbeb7cb7e342e57d3e37c491bc72">iHeight</a>, <a class="el" href="classipe_1_1_snap.html#aa93304f8e232037eca783ecd205ae589">ipe::Snap::iOrigin</a>, <a class="el" href="classipe_1_1_canvas_base.html#af5dc57f616e67315c44e08560b2259fb">iSnap</a>, <a class="el" href="classipe_1_1_canvas_base.html#ac8eaee237331f2001c3b0d7521d1fd5f">iWidth</a>, <a class="el" href="classipe_1_1_canvas_base.html#ad29e21feb6fcf49a8cae35661682cf1d">iZoom</a>, <a class="el" href="classipe_1_1_vector.html#a58668804796f6ee15eaa12c19e780e6e">ipe::Vector::x</a>, and <a class="el" href="classipe_1_1_vector.html#a3d1e88586b23678ae56cbc46e1436e11">ipe::Vector::y</a>.</p>
+<p>References <a class="el" href="classipe_1_1_snap.html#ac580ab8d8536f7e31f6bae5c978de5de">ipe::Snap::iAngleSize</a>, <a class="el" href="classipe_1_1_snap.html#a7ed82af38bcec0c698080103924e6720">ipe::Snap::iDir</a>, <a class="el" href="classipe_1_1_canvas_base.html#af40cef0de204a5661f793b1358aed510">iHeight</a>, <a class="el" href="classipe_1_1_snap.html#aa93304f8e232037eca783ecd205ae589">ipe::Snap::iOrigin</a>, <a class="el" href="classipe_1_1_canvas_base.html#af5dc57f616e67315c44e08560b2259fb">iSnap</a>, <a class="el" href="classipe_1_1_canvas_base.html#a777194170193a53d4d752af38ef6d10f">iWidth</a>, <a class="el" href="classipe_1_1_canvas_base.html#ad29e21feb6fcf49a8cae35661682cf1d">iZoom</a>, <a class="el" href="classipe_1_1_vector.html#a58668804796f6ee15eaa12c19e780e6e">ipe::Vector::x</a>, and <a class="el" href="classipe_1_1_vector.html#a3d1e88586b23678ae56cbc46e1436e11">ipe::Vector::y</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_canvas_base.html#ae1d3c0a9a6eaf83fdf7b23603ca2efa3">refreshSurface()</a>.</p>
 
@@ -1413,7 +1425,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#a0b2b4a4079fad9cebb7ee5ea6976f95f">ipe::CanvasBase::Style::classicGrid</a>, <a class="el" href="classipe_1_1_canvas_base.html#a321b17d822c85b1eb71e7e0a68a6e9b5">devToUser()</a>, <a class="el" href="classipe_1_1_cascade.html#aa72fdb16161553f4e070f8a469b2c50e">ipe::Cascade::findLayout()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a2ac38977a482fc7cf4bea41806edde14">iCascade</a>, <a class="el" href="structipe_1_1_layout.html#a06e1cc91fb8f8a0cf102e454f035cbc9">ipe::Layout::iFrameSize</a>, <a class="el" href="classipe_1_1_snap.html#a5d43409052b644e9d4cde11178076812">ipe::Snap::iGridSize</a>, <a class="el" href="classipe_1_1_canvas_base.html#a1e2cbbeb7cb7e342e57d3e37c491bc72">iHeight</a>, <a class="el" href="classipe_1_1_canvas_base.html#af5dc57f616e67315c44e08560b2259fb">iSnap</a>, <a class="el" href="classipe_1_1_canvas_base.html#a9dcfa6d108174f217534a891758e9086">iStyle</a>, <a class="el" href="classipe_1_1_canvas_base.html#ac8eaee237331f2001c3b0d7521d1fd5f">iWidth</a>, <a class="el" href="classipe_1_1_canvas_base.html#ad29e21feb6fcf49a8cae35661682cf1d">iZoom</a>, <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#a6f09d5571667f2fd4f61917bfb4ccdc7">ipe::CanvasBase::Style::thickLine</a>, <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#a1492968e1d2ee696708ba2933ab59142">ipe::CanvasBase::Style::thickStep</a>, <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#acada6a9072301782737026133e8dc5bc">ipe::CanvasBase::Style::thinLine</a>, <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#a382ab37a9d9d9d5c81221ee0ef4818f7">ipe::CanvasBase::Style::thinStep</a>, <a class="el" href="classipe_1_1_vector.html#a58668804796f6ee15eaa12c19e780e6e">ipe::Vector::x</a>, <a class="el" href="classipe_1_1_vector.html#a3d1e88586b23678ae56cbc46e1436e11">ipe::Vector::y</a>, and <a class="el" href="classipe_1_1_vector.html#a417d6c7cc04768887921fbeae6bc4d17">ipe::Vector::ZERO</a>.</p>
+<p>References <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#a0b2b4a4079fad9cebb7ee5ea6976f95f">ipe::CanvasBase::Style::classicGrid</a>, <a class="el" href="classipe_1_1_canvas_base.html#a321b17d822c85b1eb71e7e0a68a6e9b5">devToUser()</a>, <a class="el" href="classipe_1_1_cascade.html#aa72fdb16161553f4e070f8a469b2c50e">ipe::Cascade::findLayout()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a2ac38977a482fc7cf4bea41806edde14">iCascade</a>, <a class="el" href="structipe_1_1_layout.html#a06e1cc91fb8f8a0cf102e454f035cbc9">ipe::Layout::iFrameSize</a>, <a class="el" href="classipe_1_1_snap.html#a5d43409052b644e9d4cde11178076812">ipe::Snap::iGridSize</a>, <a class="el" href="classipe_1_1_canvas_base.html#af40cef0de204a5661f793b1358aed510">iHeight</a>, <a class="el" href="classipe_1_1_canvas_base.html#af5dc57f616e67315c44e08560b2259fb">iSnap</a>, <a class="el" href="classipe_1_1_canvas_base.html#a9dcfa6d108174f217534a891758e9086">iStyle</a>, <a class="el" href="classipe_1_1_canvas_base.html#a777194170193a53d4d752af38ef6d10f">iWidth</a>, <a class="el" href="classipe_1_1_canvas_base.html#ad29e21feb6fcf49a8cae35661682cf1d">iZoom</a>, <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#a6f09d5571667f2fd4f61917bfb4ccdc7">ipe::CanvasBase::Style::thickLine</a>, <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#a1492968e1d2ee696708ba2933ab59142">ipe::CanvasBase::Style::thickStep</a>, <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#acada6a9072301782737026133e8dc5bc">ipe::CanvasBase::Style::thinLine</a>, <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#a382ab37a9d9d9d5c81221ee0ef4818f7">ipe::CanvasBase::Style::thinStep</a>, <a class="el" href="classipe_1_1_vector.html#a58668804796f6ee15eaa12c19e780e6e">ipe::Vector::x</a>, <a class="el" href="classipe_1_1_vector.html#a3d1e88586b23678ae56cbc46e1436e11">ipe::Vector::y</a>, and <a class="el" href="classipe_1_1_vector.html#a417d6c7cc04768887921fbeae6bc4d17">ipe::Vector::ZERO</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_canvas_base.html#ae1d3c0a9a6eaf83fdf7b23603ca2efa3">refreshSurface()</a>.</p>
 
@@ -1526,7 +1538,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classipe_1_1_canvas_observer.html#a2f8f77e39ffc8327e745505b9f4a9055">ipe::CanvasObserver::canvasObserverSizeChanged()</a>, <a class="el" href="classipe_1_1_canvas_base.html#aa13cd38ed71f70f5aa98dc64130602a2">drawAxes()</a>, <a class="el" href="classipe_1_1_canvas_base.html#aafeb2419c1f86d762042635c5d916fa0">drawFrame()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a30302f6e97dfde006ec2abfab4847d37">drawGrid()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a2e1a8969130d937322372c8fa635f3c2">drawObjects()</a>, <a class="el" href="classipe_1_1_canvas_base.html#aa93a8ef7cb840e6a8a714951d309647c">drawPaper()</a>, <a class="el" href="classipe_1_1_snap.html#a78d93d222cc07fbbc1bcfc96e119168f">ipe::Snap::iGridVisible</a>, <a class="el" href="classipe_1_1_canvas_base.html#a1e2cbbeb7cb7e342e57d3e37c491bc72">iHeight</a>, <a class="el" href="classipe_1_1_canvas_base.html#a191fc66a0be86d2bab62c9496ff32ea6">iObserver</a>, <a class="el" href="classipe_1_1_canvas_base.html#a00d463b1f9b8aebd3ce8a4624ebcd699">iPage</a>, <a class="el" href="classipe_1_1_canvas_base.html#ac08633cc966d0f843923eceb548da4b0">iPan</a>, <a class="el" href="classipe_1_1_canvas_base.html#afd4c3a49d78fe1d957d3d1f944f52672">iRepaintObjects</a>, <a class="el" href="classipe_1_1_canvas_base.html#af5dc57f616e67315c44e08560b2259fb">iSnap</a>, <a class="el" href="classipe_1_1_canvas_base.html#a9dcfa6d108174f217534a891758e9086">iStyle</a>, <a class="el" href="classipe_1_1_canvas_base.html#aefb13c8b7ad6798ce0b77d9e9be84ac0">iSurface</a>, <a class="el" href="classipe_1_1_canvas_base.html#ac8eaee237331f2001c3b0d7521d1fd5f">iWidth</a>, <a class="el" href="classipe_1_1_snap.html#a3d4ee2bd070ec1d5be4d3194445ae27b">ipe::Snap::iWithAxes</a>, <a class="el" href="classipe_1_1_canvas_base.html#ad29e21feb6fcf49a8cae35661682cf1d">iZoom</a>, <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#aee34fcb759f0d5eb1a816fde95bcdf17">ipe::CanvasBase::Style::pretty</a>, <a class="el" href="classipe_1_1_vector.html#a58668804796f6ee15eaa12c19e780e6e">ipe::Vector::x</a>, and <a class="el" href="classipe_1_1_vector.html#a3d1e88586b23678ae56cbc46e1436e11">ipe::Vector::y</a>.</p>
+<p>References <a class="el" href="classipe_1_1_canvas_observer.html#a2f8f77e39ffc8327e745505b9f4a9055">ipe::CanvasObserver::canvasObserverSizeChanged()</a>, <a class="el" href="classipe_1_1_canvas_base.html#aa13cd38ed71f70f5aa98dc64130602a2">drawAxes()</a>, <a class="el" href="classipe_1_1_canvas_base.html#aafeb2419c1f86d762042635c5d916fa0">drawFrame()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a30302f6e97dfde006ec2abfab4847d37">drawGrid()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a2e1a8969130d937322372c8fa635f3c2">drawObjects()</a>, <a class="el" href="classipe_1_1_canvas_base.html#aa93a8ef7cb840e6a8a714951d309647c">drawPaper()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a88703afeec84d275c46f4761925453df">iBHeight</a>, <a class="el" href="classipe_1_1_canvas_base.html#aef75032e9ac2cc7fc166f69bffc788f4">iBWidth</a>, <a class="el" href="classipe_1_1_snap.html#a78d93d222cc07fbbc1bcfc96e119168f">ipe::Snap::iGridVisible</a>, <a class="el" href="classipe_1_1_canvas_base.html#af40cef0de204a5661f793b1358aed510">iHeight</a>, <a class="el" href="classipe_1_1_canvas_base.html#a191fc66a0be86d2bab62c9496ff32ea6">iObserver</a>, <a class="el" href="classipe_1_1_canvas_base.html#a00d463b1f9b8aebd3ce8a4624ebcd699">iPage</a>, <a class="el" href="classipe_1_1_canvas_base.html#ac08633cc966d0f843923eceb548da4b0">iPan</a>, <a class="el" href="classipe_1_1_canvas_base.html#afd4c3a49d78fe1d957d3d1f944f52672">iRepaintObjects</a>, <a class="el" href="classipe_1_1_canvas_base.html#af5dc57f616e67315c44e08560b2259fb">iSnap</a>, <a class="el" href="classipe_1_1_canvas_base.html#a9dcfa6d108174f217534a891758e9086">iStyle</a>, <a class="el" href="classipe_1_1_canvas_base.html#aefb13c8b7ad6798ce0b77d9e9be84ac0">iSurface</a>, <a class="el" href="classipe_1_1_canvas_base.html#a777194170193a53d4d752af38ef6d10f">iWidth</a>, <a class="el" href="classipe_1_1_snap.html#a3d4ee2bd070ec1d5be4d3194445ae27b">ipe::Snap::iWithAxes</a>, <a class="el" href="classipe_1_1_canvas_base.html#ad29e21feb6fcf49a8cae35661682cf1d">iZoom</a>, <a class="el" href="structipe_1_1_canvas_base_1_1_style.html#aee34fcb759f0d5eb1a816fde95bcdf17">ipe::CanvasBase::Style::pretty</a>, <a class="el" href="classipe_1_1_vector.html#a58668804796f6ee15eaa12c19e780e6e">ipe::Vector::x</a>, and <a class="el" href="classipe_1_1_vector.html#a3d1e88586b23678ae56cbc46e1436e11">ipe::Vector::y</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_canvas.html#abfcf66e646b097df07fc9f5772b2fd2b">ipe::Canvas::paintEvent()</a>.</p>
 
@@ -1665,7 +1677,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classipe_1_1_canvas_base.html#ad5138d96f6ee1c9c145c258a18b0efdb">computeFifi()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a85b6ddc41226bd85778fa9c19272d036">drawTool()</a>, <a class="el" href="classipe_1_1_canvas_base.html#ac09f5ae27c81ef9de5b36eca9cac6772">finishTool()</a>, <a class="el" href="class_canvas.html#aa3638047bafb2d4a7282b06fdad50be4">Canvas::key</a>, <a class="el" href="classipe_1_1_canvas.html#a592f26c0bcfddffcd5ca936fb5b9a733">ipe::Canvas::keyPressEvent()</a>, <a class="el" href="classipe_1_1_canvas.html#a1d59a49b383185fa7b4e520ee28c6ef7">ipe::Canvas::mouseButton()</a>, <a class="el" href="class_canvas.html#a774f38ebc023b5e305f772c4ae5c8578">Canvas::mouseMove</a>, <a class="el" href="classipe_1_1_canvas.html#a2b61c27037ba554c2eee54752f0759c5">ipe::Canvas::mouseMoveEvent()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a178f69bfbee736697a2ee903f1254953">setTool()</a>, <a class="el" href="classipe_1_1_canvas.html#a86d0243d7053a5ce2291936312344ad3">ipe::Canvas::tabletEvent()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a835423534ebc874b923e7447b27742a3">tool()</a>, and <a class="el" href="classipe_1_1_canvas_base.html#aea866d08b994b8acaa02e9a67d9edd6f">~CanvasBase()</a>.</p>
+<p>Referenced by <a class="el" href="classipe_1_1_canvas_base.html#ad5138d96f6ee1c9c145c258a18b0efdb">computeFifi()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a85b6ddc41226bd85778fa9c19272d036">drawTool()</a>, <a class="el" href="classipe_1_1_canvas_base.html#ac09f5ae27c81ef9de5b36eca9cac6772">finishTool()</a>, <a class="el" href="class_canvas.html#ac43f07a877a3d3767f11a36411727928">Canvas::key</a>, <a class="el" href="classipe_1_1_canvas.html#a592f26c0bcfddffcd5ca936fb5b9a733">ipe::Canvas::keyPressEvent()</a>, <a class="el" href="classipe_1_1_canvas.html#a1d59a49b383185fa7b4e520ee28c6ef7">ipe::Canvas::mouseButton()</a>, <a class="el" href="class_canvas.html#a774f38ebc023b5e305f772c4ae5c8578">Canvas::mouseMove</a>, <a class="el" href="classipe_1_1_canvas.html#a2b61c27037ba554c2eee54752f0759c5">ipe::Canvas::mouseMoveEvent()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a178f69bfbee736697a2ee903f1254953">setTool()</a>, <a class="el" href="classipe_1_1_canvas.html#a86d0243d7053a5ce2291936312344ad3">ipe::Canvas::tabletEvent()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a835423534ebc874b923e7447b27742a3">tool()</a>, and <a class="el" href="classipe_1_1_canvas_base.html#aea866d08b994b8acaa02e9a67d9edd6f">~CanvasBase()</a>.</p>
 
 </div>
 </div>
@@ -1955,7 +1967,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac8eaee237331f2001c3b0d7521d1fd5f"></a>
+<a class="anchor" id="a777194170193a53d4d752af38ef6d10f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1963,7 +1975,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int ipe::CanvasBase::iWidth</td>
+          <td class="memname">double ipe::CanvasBase::iWidth</td>
         </tr>
       </table>
   </td>
@@ -1977,7 +1989,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1e2cbbeb7cb7e342e57d3e37c491bc72"></a>
+<a class="anchor" id="af40cef0de204a5661f793b1358aed510"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1985,7 +1997,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int ipe::CanvasBase::iHeight</td>
+          <td class="memname">double ipe::CanvasBase::iHeight</td>
         </tr>
       </table>
   </td>
@@ -1996,6 +2008,50 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Referenced by <a class="el" href="classipe_1_1_canvas_base.html#a3f23f76085309b9e6ca5d4d9ddeb0711">canvasHeight()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a98a01e793436469415b472a39373f170">center()</a>, <a class="el" href="classipe_1_1_canvas_base.html#aa13cd38ed71f70f5aa98dc64130602a2">drawAxes()</a>, <a class="el" href="classipe_1_1_canvas_base.html#a30302f6e97dfde006ec2abfab4847d37">drawGrid()</a>, <a class="el" href="class_canvas.html#ab4ce3542663fa4743198adf5aeadb45d">Canvas::drawRect</a>, <a class="el" href="class_canvas.html#a774f38ebc023b5e305f772c4ae5c8578">Canvas::mouseMove</a>, <a class="el" href="classipe_1_1_canvas.html#abfcf66e646b097df07fc9f5772b2fd2b">ipe::Canvas::paintEvent()</a>, and <a class="el" href="classipe_1_1_canvas_base.html#ae1d3c0a9a6eaf83fdf7b23603ca2efa3">refreshSurface()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef75032e9ac2cc7fc166f69bffc788f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ipe::CanvasBase::iBWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="class_canvas.html#ab4ce3542663fa4743198adf5aeadb45d">Canvas::drawRect</a>, <a class="el" href="classipe_1_1_canvas.html#abfcf66e646b097df07fc9f5772b2fd2b">ipe::Canvas::paintEvent()</a>, and <a class="el" href="classipe_1_1_canvas_base.html#ae1d3c0a9a6eaf83fdf7b23603ca2efa3">refreshSurface()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88703afeec84d275c46f4761925453df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ipe::CanvasBase::iBHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="class_canvas.html#ab4ce3542663fa4743198adf5aeadb45d">Canvas::drawRect</a>, <a class="el" href="classipe_1_1_canvas.html#abfcf66e646b097df07fc9f5772b2fd2b">ipe::Canvas::paintEvent()</a>, and <a class="el" href="classipe_1_1_canvas_base.html#ae1d3c0a9a6eaf83fdf7b23603ca2efa3">refreshSurface()</a>.</p>
 
 </div>
 </div>
@@ -2200,7 +2256,7 @@ Protected Attributes</h2></td></tr>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>ipecanvas.h</li>
 <li>ipecanvas.cpp</li>
-<li>ipecanvas_cocoa.cpp</li>
+<li>ipeselector_cocoa.cpp</li>
 <li>ipeselector_gtk.cpp</li>
 <li>ipeselector_qt.cpp</li>
 <li>ipeselector_win.cpp</li>
