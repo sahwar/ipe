@@ -2,9 +2,9 @@
 <html>
 <!-- XML file produced from file: manual.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.3.1, Sun Jan 24 11:57:19 2016 -->
+     on Emacs 24.3.1, Sat Jun 11 09:42:01 2016 -->
 <head>
-<title>Ipe Manual -- 9.2 The &lt;page&gt; element</title>
+<title>Ipe Manual -- 9 The Ipe file format</title>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,
     initial-scale=1" /><link rel="stylesheet" href="manual.css" />
 <style type="text/css">
@@ -62,66 +62,43 @@ dl.tex-description dd {
 <body bgcolor="#ffffe6">
 <div data-role="page">
 <table width="100%" cellpadding=0 cellspacing=2><tr>
-    <td bgcolor="#99ccff"><a href="manual_44.html"><img border="0" alt="9.3 Ipe object elements" src="next.png"></a></td><td bgcolor="#99ccff"><a href="manual_41.html"><img border="0" alt="9 The Ipe file format" src="up.png"></a></td><td bgcolor="#99ccff"><a href="manual_42.html"><img border="0" alt="9.1 The &lt;ipe&gt; element" src="previous.png"></a></td><td align="center" bgcolor="#99ccff" width="100%"><span class="tex-bf">9.2 The <span class="tex-tt">&lt;page&gt;</span> element</span></td></tr></table>
+    <td bgcolor="#99ccff"><a href="manual_48.html"><img border="0" alt="10 Using Ipe figures in Latex" src="next.png"></a></td><td bgcolor="#99ccff"><a href="manual.html"><img border="0" alt="Top" src="up.png"></a></td><td bgcolor="#99ccff"><a href="manual_34.html"><img border="0" alt="8 Advanced topics" src="previous.png"></a></td><td align="center" bgcolor="#99ccff" width="100%"><span class="tex-bf">9 The Ipe file format</span></td></tr></table>
 <div data-role="content">
-<h2>9.2 The <span class="tex-tt">&lt;page&gt;</span> element</h2>
+<h1>9 The Ipe file format</h1>
 
-<h4 id="id1">Attributes</h4>
-<dl class="tex-description"><dt><span class="tex-bf">title</span></dt><dd> (optional) title of this page (displayed at a fixed
-  location in a format specified by the style sheet),
-<dt><span class="tex-bf">section</span></dt><dd> (optional) Title of document section starting with this
-  page. If the attribute is not present, this page continues the
-  section of the previous page.  If the attribute is present, but its
-  value is an empty string, then the contents of the <code>title</code>
-  attribute is used instead.
-<dt><span class="tex-bf">subsection</span></dt><dd> (optional) Title of document subsection starting
-  with this page. If the attribute is not present, this page continues
-  the subsection of the previous page.  If the attribute is present,
-  but its value is an empty string, then the contents of the
-  <code>title</code> attribute is used instead.
-<dt><span class="tex-bf">marked</span></dt><dd> (optional) The page is marked for printing unless the
-  value of this attribute is <code>no</code>.
-</dl>
-
-<h4 id="id2">Contents</h4>
-<ol class="tex-enumerate"><li>An optional <code>&lt;notes&gt;</code> element,
-<li>a possibly empty sequence of <code>&lt;layer&gt;</code> elements,
-<li>a possibly empty sequence of <code>&lt;view&gt;</code> elements,
-<li>a possibly empty sequence of Ipe object elements.
-</ol>
-<p>If a page contains no layer element, Ipe automatically adds a default
-layer named "alpha", visible and editable. 
-<p>If a page contains no view element, a single view where all layers are
-visible is assumed.
-
-<h3 id="id3">9.2.1 The <span class="tex-tt">&lt;notes&gt;</span> element</h3>
-<p>This element has no attributes.  Its contents is plain text,
-containing notes for this page.
-
-<h3 id="id4">9.2.2 The <span class="tex-tt">&lt;layer&gt;</span> element</h3>
-
-<h4 id="id5">Attributes</h4>
-<dl class="tex-description"><dt><span class="tex-bf">name</span></dt><dd> (required) Name of the layer.  It must not contain white
-  space.
-<dt><span class="tex-bf">edit</span></dt><dd> (optional) The value should be <code>yes</code> or
-  <code>no</code> and indicates whether the user can select and modify the
-  contents of the layer in the Ipe user interface (of course the user
-  can always modify the setting of the attribute).
-</dl>
-<p>The layer element must be empty.
-
-<h3 id="id6">9.2.3 The <span class="tex-tt">&lt;view&gt;</span> element</h3>
-
-<h4 id="id7">Attributes</h4>
-<dl class="tex-description"><dt><span class="tex-bf">layers</span></dt><dd> (required) The value must be a sequence of layer names
-  defined in this page, separated by white space.
-<dt><span class="tex-bf">active</span></dt><dd> (required) The layer that is the active layer in this view.
-<dt><span class="tex-bf">effect</span></dt><dd> (optional) The symbolic name of a graphics effect to be
-  used during the PDF page transition.  The effect must be defined in
-  the style sheet.
-<dt><span class="tex-bf">marked</span></dt><dd> (optional) The view is marked for printing if the value
-  of this attribute is <code>yes</code>.
-</dl>
-<p>The view element must be empty.
+<p>Ipe can store documents in several possible formats.  Among them are
+standard PDF and Postscript, which can be read by any application
+capable of opening such files, such as Acrobat Reader, Xpdf, or
+Ghostview.  (Ipe embeds its own information inside PDF and Postscript
+files.  The way this is done is not documented here, and may change
+between releases of Ipe.)
+<p>There is one other Ipe file format, which is a pure XML
+implementation.  Files stored in this format can be parsed with any
+XML-aware application, and you can create XML files for Ipe from your
+own applications. 
+<p>A DTD for the Ipe format is available as <a href="ipe.dtd">ipe.dtd</a>. For
+instance, you can use this to validate an Ipe document using
+<pre class="tex-verbatim">
+xmllint --valid --path &lt;path-to-ipe.dtd&gt; --noout &lt;file.ipe&gt;
+</pre>
+<p>The tags understood by Ipe are described informally in this section.
+Tags in the XML file can carry attributes other than the ones
+documented here.  Ipe ignores all attributes it does't understand, and
+they will be lost if the document is saved again from Ipe.  Ipe will
+complain about any XML elements not described here, with the exception
+that you can use elements whose name starts with "x-" freely to add
+your own information inside an Ipe file.
+<p>An Ipe XML file must contain exactly one <code>&lt;ipe&gt;</code> element, while
+an Ipe stylesheet file must contain exactly one <code>&lt;ipestyle&gt;</code>
+element (both types of files are allowed to start with an
+<code>&lt;?xml&gt;</code> tag, which is simply ignored by Ipe).  An Ipe file may
+also contain a <code>&lt;!DOCTYPE&gt;</code> tag.
+<p>All elements are documented below.
+<ul>
+<li><a href="manual_44.html">9.1 The <span class="tex-tt">&lt;ipe&gt;</span> element</a>
+<li><a href="manual_45.html">9.2 The <span class="tex-tt">&lt;page&gt;</span> element</a>
+<li><a href="manual_46.html">9.3 Ipe object elements</a>
+<li><a href="manual_47.html">9.4 The <span class="tex-tt">&lt;ipestyle&gt;</span> element</a>
+</ul>
 </div>
 </div></body></html>

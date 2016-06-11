@@ -2,9 +2,9 @@
 <html>
 <!-- XML file produced from file: manual.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.3.1, Sun Jan 24 11:57:19 2016 -->
+     on Emacs 24.3.1, Sat Jun 11 09:42:01 2016 -->
 <head>
-<title>Ipe Manual -- 12.2 Environment variables</title>
+<title>Ipe Manual -- 11.1 Ipe</title>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,
     initial-scale=1" /><link rel="stylesheet" href="manual.css" />
 <style type="text/css">
@@ -62,37 +62,17 @@ dl.tex-description dd {
 <body bgcolor="#ffffe6">
 <div data-role="page">
 <table width="100%" cellpadding=0 cellspacing=2><tr>
-    <td bgcolor="#99ccff"><img alt="" src="blank.png"></td><td bgcolor="#99ccff"><a href="manual_48.html"><img border="0" alt="12 Command line options and environment variables" src="up.png"></a></td><td bgcolor="#99ccff"><a href="manual_49.html"><img border="0" alt="12.1 Command line options" src="previous.png"></a></td><td align="center" bgcolor="#99ccff" width="100%"><span class="tex-bf">12.2 Environment variables</span></td></tr></table>
+    <td bgcolor="#99ccff"><a href="manual_51.html"><img border="0" alt="11.2 Ipetoipe: converting Ipe file formats" src="next.png"></a></td><td bgcolor="#99ccff"><a href="manual_49.html"><img border="0" alt="11 The command line programs" src="up.png"></a></td><td bgcolor="#99ccff"><img alt="" src="blank.png"></td><td align="center" bgcolor="#99ccff" width="100%"><span class="tex-bf">11.1 Ipe</span></td></tr></table>
 <div data-role="content">
-<h2>12.2 Environment variables</h2>
-<p>Ipe, <span class="tex-emph">ipetoipe</span>, and <span class="tex-emph">iperender</span> respect the following
-environment variables:
-<dl class="tex-description"><dt><span class="tex-bf">IPELATEXDIR</span></dt><dd> the directory where Ipe runs Latex.
-<dt><span class="tex-bf">IPELATEXPATH</span></dt><dd> the directory that contains the <span class="tex-emph">pdflatex</span>
-  and <span class="tex-emph">xelatex</span> commands.  If not set, Ipe assumes the commands
-  are on your path.
-<dt><span class="tex-bf">IPEDEBUG</span></dt><dd> set to 1 for debugging output.
-<dt><span class="tex-bf">IPEANCIENTPDFTEX</span></dt><dd> set this variable to use Pdftex versions older
-  than&nbsp;1.40.
+<h2>11.1 Ipe</h2>
+<p>Ipe supports the following command line options:
+<dl class="tex-description"><dt><span class="tex-bf"><code>-sheet</code> <span class="tex-emph">style sheet name</span></span></dt><dd>
+  Adds the designated style sheet to any newly created documents.
+<dt><span class="tex-bf"><code>-show-configuration</code></span></dt><dd>
+  With this option, Ipe will display the current configuration options
+  on stdout, and terminate.
 </dl>
-<p>The Ipe program uses several additional environment variables:
-<dl class="tex-description"><dt><span class="tex-bf">EDITOR</span></dt><dd> external editor to use for editing text objects.
-<dt><span class="tex-bf">IPESTYLES</span></dt><dd> a list of directories, separated by semicolons on
-  Windows and colons otherwise, where Ipe looks for stylesheets, for
-  instance for the standard stylesheet <span class="tex-emph">basic.isy</span>. You can write
-  &#95; (a single underscore) for the system-wide stylesheet directory.
-  If this variable is not set, the default consists of the system-wide
-  stylesheet directory, plus <span class="tex-emph">~/.ipe/styles</span> on Unix, plus
-  <span class="tex-emph">~/Library/Ipe/Styles</span> on OS&nbsp;X.
-<dt><span class="tex-bf">IPELETPATH</span></dt><dd> a list of directories, separated by semicolons on
-  Windows and colons otherwise, containing ipelets. You can write &#95;
-  (a single underscore) for the system-wide ipelet directory. If this
-  variable is not set, the default consists of the system-wide ipelet
-  directory, plus <span class="tex-emph">~/.ipe/ipelets</span> on Unix, plus
-  <span class="tex-emph">~/Library/Ipe/Ipelets</span> on OS&nbsp;X.
-<dt><span class="tex-bf">IPEICONDIR</span></dt><dd> directory containing icons for the Ipe user interface.
-<dt><span class="tex-bf">IPEDOCDIR</span></dt><dd> directory containing Ipe documentation.
-<dt><span class="tex-bf">IPELUAPATH</span></dt><dd> path for searching for Ipe Lua code.
-</dl>
+In addition, you can specify the name of an Ipe file to open on the
+command line.  
 </div>
 </div></body></html>

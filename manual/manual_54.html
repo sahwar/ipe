@@ -2,9 +2,9 @@
 <html>
 <!-- XML file produced from file: manual.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.3.1, Sun Jan 24 11:57:20 2016 -->
+     on Emacs 24.3.1, Sat Jun 11 09:42:01 2016 -->
 <head>
-<title>Ipe Manual -- Footnotes</title>
+<title>Ipe Manual -- 11.5 Ipe6upgrade: convert Ipe&nbsp;6 files to Ipe&nbsp;7 file format</title>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,
     initial-scale=1" /><link rel="stylesheet" href="manual.css" />
 <style type="text/css">
@@ -62,21 +62,29 @@ dl.tex-description dd {
 <body bgcolor="#ffffe6">
 <div data-role="page">
 <table width="100%" cellpadding=0 cellspacing=2><tr>
-    <td bgcolor="#99ccff"><img alt="" src="blank.png"></td><td bgcolor="#99ccff"><a href="manual.html"><img border="0" alt="Top" src="up.png"></a></td><td bgcolor="#99ccff"><a href="manual_53.html"><img border="0" alt="Contents" src="previous.png"></a></td><td align="center" bgcolor="#99ccff" width="100%"><span class="tex-bf">Footnotes</span></td></tr></table>
+    <td bgcolor="#99ccff"><a href="manual_55.html"><img border="0" alt="11.6 Ipescript: running Ipe scripts" src="next.png"></a></td><td bgcolor="#99ccff"><a href="manual_49.html"><img border="0" alt="11 The command line programs" src="up.png"></a></td><td bgcolor="#99ccff"><a href="manual_53.html"><img border="0" alt="11.4 Ipeextract: extract XML stream from Ipe file" src="previous.png"></a></td><td align="center" bgcolor="#99ccff" width="100%"><span class="tex-bf">11.5 Ipe6upgrade: convert Ipe&nbsp;6 files to Ipe&nbsp;7 file format</span></td></tr></table>
 <div data-role="content">
-<h1>Footnotes</h1>
-<dl class="tex-description">
-<dt><span class="tex-bf"><span id="id1">&nbsp;</span>(1)</span></dt><dd>The line width can be set to zero to get
-the thinnest line the device can produce (i.e.&nbsp;approximately the same
-as 0.15&nbsp;for a 600&nbsp;dpi printer or 0.3&nbsp;for a 300&nbsp;dpi printer). The PDF
-and Postscript authorities discourage using this feature, since it
-makes your Postscript files device-dependent.
-<dt><span class="tex-bf"><span id="id2">&nbsp;</span>(2)</span></dt><dd>J. D. Foley, A.  Van Dam, S. K. Feiner,
-and J. F. Hughes, <span class="tex-it">Computer Graphics: Principles and Practice</span>,
-Addison-Wesley, 1990.
-<dt><span class="tex-bf"><span id="id3">&nbsp;</span>(3)</span></dt><dd>Fifi is called after the dog in the <code>rogue</code>
-computer game installed on most Unix systems in the 1980's, because it
-also keeps running around your feet.
-</dl>
+<h2>11.5 Ipe6upgrade: convert Ipe&nbsp;6 files to Ipe&nbsp;7 file format</h2>
+<p>Ipe6upgrade takes as input a file created by any version of Ipe&nbsp;6, and
+saves in the format of Ipe&nbsp;7.0.0.
+<pre class="tex-verbatim">
+ipe6upgrade infile [ outfile ]
+</pre>
+If not provided, the outfile is guessed by adding the extension
+"ipe" to the infile's basename.
+<p>To reuse an Ipe&nbsp;6 document in EPS or PDF format, you first run
+"ipeextract", which extracts the XML stream inside the document and
+saves it as an XML file.  The Ipe&nbsp;6 XML document can then be converted
+to Ipe&nbsp;7 format using "ipe6upgrade".
+<p>If your old figure is <span class="tex-emph">figure.pdf</span>, then the command
+<pre class="tex-verbatim">
+ipeextract figure.pdf
+</pre>
+will save the XML stream as <span class="tex-emph">figure.xml</span>.  Then run 
+<pre class="tex-verbatim">
+ipe6upgrade figure.xml
+</pre>
+which will save your document in Ipe&nbsp;7 format as <span class="tex-emph">figure.ipe</span>.
+All contents of the original document should have been preserved.
 </div>
 </div></body></html>
