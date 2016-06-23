@@ -2,9 +2,9 @@
 <html>
 <!-- XML file produced from file: manual.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.3.1, Sat Jun 11 09:42:01 2016 -->
+     on Emacs 24.3.1, Thu Jun 23 19:22:07 2016 -->
 <head>
-<title>Ipe Manual -- 11.4 Ipeextract: extract XML stream from Ipe file</title>
+<title>Ipe Manual -- 11.3 Iperender: exporting to a bitmap, EPS, or SVG</title>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,
     initial-scale=1" /><link rel="stylesheet" href="manual.css" />
 <style type="text/css">
@@ -62,17 +62,18 @@ dl.tex-description dd {
 <body bgcolor="#ffffe6">
 <div data-role="page">
 <table width="100%" cellpadding=0 cellspacing=2><tr>
-    <td bgcolor="#99ccff"><a href="manual_54.html"><img border="0" alt="11.5 Ipe6upgrade: convert Ipe&nbsp;6 files to Ipe&nbsp;7 file format" src="next.png"></a></td><td bgcolor="#99ccff"><a href="manual_49.html"><img border="0" alt="11 The command line programs" src="up.png"></a></td><td bgcolor="#99ccff"><a href="manual_52.html"><img border="0" alt="11.3 Iperender: exporting to a bitmap, EPS, or SVG" src="previous.png"></a></td><td align="center" bgcolor="#99ccff" width="100%"><span class="tex-bf">11.4 Ipeextract: extract XML stream from Ipe file</span></td></tr></table>
+    <td bgcolor="#99ccff"><a href="manual_54.html"><img border="0" alt="11.4 Ipeextract: extract XML stream from Ipe file" src="next.png"></a></td><td bgcolor="#99ccff"><a href="manual_50.html"><img border="0" alt="11 The command line programs" src="up.png"></a></td><td bgcolor="#99ccff"><a href="manual_52.html"><img border="0" alt="11.2 Ipetoipe: converting Ipe file formats" src="previous.png"></a></td><td align="center" bgcolor="#99ccff" width="100%"><span class="tex-bf">11.3 Iperender: exporting to a bitmap, EPS, or SVG</span></td></tr></table>
 <div data-role="content">
-<h2>11.4 Ipeextract: extract XML stream from Ipe file</h2>
-<p>Ipeextract extracts the XML stream from an PDF or EPS file made by
-Ipe&nbsp;6 or&nbsp;7 and saves it in a file.  It will work even if Ipe cannot
-actually parse the file, so you can use this tool to debug problems
-where Ipe fails to open your document.
+<h2>11.3 Iperender: exporting to a bitmap, EPS, or SVG</h2>
+<p>The program <span class="tex-emph">iperender</span> exports a page of the document to a
+bitmap in PNG format, to a figure in Encapsulated Postscript (EPS), or
+to scalable vector graphics in SVG format.  (Of course the result
+contains no Ipe markup, so make sure you keep your original!)  For
+instance, the following command line
 <pre class="tex-verbatim">
-ipeextract infile [ outfile ]
+  iperender -png -page 3 -resolution 150 presentation.pdf pres3.png
 </pre>
-If not provided, the outfile is guessed by appending "xml" to the
-infile's basename.
+converts page&nbsp;3 of the Ipe document <code>presentation.pdf</code> to a
+bitmap, with resolution <i>150</i> pixels per inch.
 </div>
 </div></body></html>

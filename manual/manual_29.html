@@ -2,7 +2,7 @@
 <html>
 <!-- XML file produced from file: manual.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.3.1, Sat Jun 11 09:42:01 2016 -->
+     on Emacs 24.3.1, Thu Jun 23 19:22:07 2016 -->
 <head>
 <title>Ipe Manual -- 7.1 Presentation stylesheets</title>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,
@@ -109,5 +109,42 @@ elements).
 can define the effects in the stylesheet (using <code>&lt;effect&gt;</code>
 elements), and set them using <span class="tex-emph">Edit effect</span> in the <span class="tex-emph">View</span>
 menu.
+<p><span id="pagenumberstyle">
+If</span> you want to number the pages of the presentation, you'll need to
+use the <code>&lt;pagenumberstyle&gt;</code> element.  It defines color, size,
+position, and alignment of the page number, and provides a template
+for the page number text.  The template can use the following Latex
+counters:
+<ul class="tex-itemize"><li><code>ipePage</code> for the current page number,
+  <li><code>ipeView</code> for the current view number,
+  <li><code>ipePages</code> for the total number of pages,
+  <li><code>ipeViews</code> for the number of views of the current page,
+</ul>
+and the special macro <code>\ipeNumber{x}{y}</code> that evaluates to <code>x</code> when
+the page has only one view, and to <code>y</code> if there is more than one
+view.
+<p>If the template is empty, this has the same effect as the following
+definition (this is also the default definition):
+<pre class="tex-verbatim">
+\ipeNumber{\arabic{ipePage}}{\arabic{ipePage} - \arabic{ipeView}}
+</pre>
+<p>The following example definition indicates the views of a single page
+with letters A, B, C, &hellip;:
+<pre class="tex-verbatim">
+&lt;pagenumberstyle pos="300 100" size="Huge" color="navy" 
+  halign="center"&gt;\ipeNumber{\arabic{ipePage}}{\arabic{ipePage} 
+\Alph{ipeView}}&lt;/pagenumberstyle&gt;
+</pre>
+<p>The following definition uses roman numerals for the pages and does
+not indicate different views at all:
+<pre class="tex-verbatim">
+&lt;pagenumberstyle pos="580 20" size="Huge" color="purple" 
+  halign="right"&gt;\roman{ipePage}&lt;/pagenumberstyle&gt;
+</pre>
+<p>And this shows both the current page and the total number of pages:
+<pre class="tex-verbatim">
+&lt;pagenumberstyle pos="20 820" size="Huge" color="0.5 0 0" 
+  valign="top"&gt;\arabic{ipePage}/\arabic{ipePages}&lt;/pagenumberstyle&gt;
+</pre>
 </div>
 </div></body></html>

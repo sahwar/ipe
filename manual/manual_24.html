@@ -2,7 +2,7 @@
 <html>
 <!-- XML file produced from file: manual.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.3.1, Sat Jun 11 09:42:01 2016 -->
+     on Emacs 24.3.1, Thu Jun 23 19:22:07 2016 -->
 <head>
 <title>Ipe Manual -- 5.3 Angular snapping</title>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,
@@ -91,14 +91,16 @@ snapping is disabled.  Together, origin and base direction determine
 the current <span class="tex-emph">axis system</span>. Remember that the origin is also used
 as the fix-point of scale, stretch, and rotate operations, if it is
 set.
-<p>You can un-set the current axis system by pressing
-<kbd>Shift-F2</kbd>. This also turns off angular snapping. 
-You can set origin and base direction at the same time by pressing
+<p>You can hide the current axis system by pressing <kbd>Ctrl+F1</kbd>. This
+also turns off angular snapping, but preserves origin and orientation of
+the axes.  To reset the orientation (such that the <i>x</i>-axis is
+horizontal, use <kbd>Ctrl+F2</kbd>).
+<p>You can set origin and base direction at the same time by pressing
 <kbd>F3</kbd> when the mouse is very near (or snapped to) an edge of a
 polygonal object.  The origin is set to an endpoint of the edge, and
 the base direction is aligned with it. This is useful to make objects
 parallel to a given edge.
-<p><p><span id="id2">
+<p><span id="id2">
 For</span> drawing rectilinear or c-oriented polygons, the origin should be
 set to the previous vertex at every step. This can be done by pressing
 <kbd>F1</kbd> every time you click the left mouse button, but that would

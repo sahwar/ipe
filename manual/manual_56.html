@@ -2,9 +2,9 @@
 <html>
 <!-- XML file produced from file: manual.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.3.1, Sat Jun 11 09:42:01 2016 -->
+     on Emacs 24.3.1, Thu Jun 23 19:22:07 2016 -->
 <head>
-<title>Ipe Manual -- 11.7 Importing other formats</title>
+<title>Ipe Manual -- 11.6 Ipescript: running Ipe scripts</title>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,
     initial-scale=1" /><link rel="stylesheet" href="manual.css" />
 <style type="text/css">
@@ -62,56 +62,20 @@ dl.tex-description dd {
 <body bgcolor="#ffffe6">
 <div data-role="page">
 <table width="100%" cellpadding=0 cellspacing=2><tr>
-    <td bgcolor="#99ccff"><img alt="" src="blank.png"></td><td bgcolor="#99ccff"><a href="manual_49.html"><img border="0" alt="11 The command line programs" src="up.png"></a></td><td bgcolor="#99ccff"><a href="manual_55.html"><img border="0" alt="11.6 Ipescript: running Ipe scripts" src="previous.png"></a></td><td align="center" bgcolor="#99ccff" width="100%"><span class="tex-bf">11.7 Importing other formats</span></td></tr></table>
+    <td bgcolor="#99ccff"><a href="manual_57.html"><img border="0" alt="11.7 Importing other formats" src="next.png"></a></td><td bgcolor="#99ccff"><a href="manual_50.html"><img border="0" alt="11 The command line programs" src="up.png"></a></td><td bgcolor="#99ccff"><a href="manual_55.html"><img border="0" alt="11.5 Ipe6upgrade: convert Ipe&nbsp;6 files to Ipe&nbsp;7 file format" src="previous.png"></a></td><td align="center" bgcolor="#99ccff" width="100%"><span class="tex-bf">11.6 Ipescript: running Ipe scripts</span></td></tr></table>
 <div data-role="content">
-<h2>11.7 Importing other formats</h2>
-
-<h4 id="id1">Svgtoipe: Importing SVG figures</h4>
-
-<p>The auxiliary program <span class="tex-emph">svgtoipe</span> converts an SVG figure to Ipe
-format. It cannot handle all SVG features (many SVG features are not
-supported by Ipe anyway), but it works for gradients.
-<p><span class="tex-emph">svgtoipe</span> is not part of the Ipe source distribution. You can
-download it separately.
-
-<h4 id="id2">Pdftoipe: Importing Postscript and PDF</h4>
-
-<p>You can convert arbitrary Postscript or PDF files into Ipe documents,
-making them editable.  The auxiliary program <span class="tex-emph">pdftoipe</span> converts
-(pages from) a PDF file into an Ipe XML-file. (If your source is
-Postscript, you have to first convert it to PDF using Acrobat
-Distiller or <span class="tex-emph">ps2pdf</span>.)  Once converted to XML, the file can be
-opened from Ipe as usual.
-<p>The conversion process should handle any graphics in the PDF file
-fine, but doesn't do very well on text&mdash;Ipe's text model is just too
-different.
-<p><span class="tex-emph">pdftoipe</span> is not part of the Ipe source distribution. You can
-download and build it separately.
-
-<h4 id="id3">Ipe5toxml: convert Ipe&nbsp;5 files to Ipe&nbsp;6 file format</h4>
-<p>If you still have figures that were created with Ipe&nbsp;5, you can use
-<span class="tex-emph">ipe5toxml</span> to convert them to Ipe&nbsp;6 format.  You can then use
-<span class="tex-emph">ipe6upgrade</span> to convert them to Ipe&nbsp;7 format.
-<p><span class="tex-emph">ipe5toxml</span> is not part of the Ipe distribution, but available as
-a separate download.
-
-<h4 id="id4">Figtoipe: Importing FIG figures</h4>
-
-<p>The auxiliary program <span class="tex-emph">figtoipe</span> converts a figure in FIG format
-into an Ipe XML-file.  This is useful if you used to make figures with
-Xfig before discovering Ipe, of if your co-authors made figures for
-your article with Xfig (converting them will have the added benefit of
-forcing your co-authors to learn to use Ipe).  Finally, there are
-quite a number of programs that can export to FIG format, and
-<span class="tex-emph">figtoipe</span> effectively turns that into the possibility of
-exporting to Ipe.
-<p>However, <span class="tex-emph">figtoipe</span> is not quite complete.  The drawing models of
-FIG and Ipe are also somewhat different, which makes it impossible to
-properly render some FIG files in Ipe.  Ipe does not support depth
-ordering independent of grouping, pattern fill, and Postscript fonts.
-You may therefore have to edit the file after conversion.
-<p><span class="tex-emph">figtoipe</span> is not part of the Ipe distribution. You can download
-and build it separately. <span class="tex-emph">figtoipe</span> is now maintained by
-Alexander B&uuml;rger.
+<h2>11.6 Ipescript: running Ipe scripts</h2>
+<p>Ipescript runs an Ipe script written in the Lua language with bindings
+for the Ipe objects, such as the script "update-master".  Ipescript
+automatically finds the script in Ipe's script directories.  On Unix,
+you can place your own scripts in <span class="tex-emph">&#36;HOME/.ipe/scripts</span>.
+<p>The Ipe distribution contains the following scripts:
+<ul class="tex-itemize"><li><span class="tex-emph">update-master</span>, explained 
+  <a href="manual_35.html">earlier</a>;
+<li><span class="tex-emph">add-style</span> to add a stylesheet to Ipe figures;
+<li><span class="tex-emph">update-styles</span> to update the stylesheets in Ipe figures
+  (in the same way that Ipe does it using the "Update stylesheets"
+  function). 
+</ul>
 </div>
 </div></body></html>

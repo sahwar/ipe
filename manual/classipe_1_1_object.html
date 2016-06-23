@@ -86,6 +86,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac6289d8762c8cfad2526d7e299ee4829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a331113681fe2accfa23018e06697719a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classipe_1_1_group.html">Group</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_object.html#a331113681fe2accfa23018e06697719a">asGroup</a> ()</td></tr>
 <tr class="separator:a331113681fe2accfa23018e06697719a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af9ed85ce0f70b8b71e70d6e64e2c6e"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classipe_1_1_group.html">Group</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_object.html#a3af9ed85ce0f70b8b71e70d6e64e2c6e">asGroup</a> () const </td></tr>
+<tr class="separator:a3af9ed85ce0f70b8b71e70d6e64e2c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c32ef2a0fb6d65526ff81bfafe63ef"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classipe_1_1_text.html">Text</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_object.html#a89c32ef2a0fb6d65526ff81bfafe63ef">asText</a> ()</td></tr>
 <tr class="separator:a89c32ef2a0fb6d65526ff81bfafe63ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac589cb8ae9e6aeb6489580fab7a1f373"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classipe_1_1_path.html">Path</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_object.html#ac589cb8ae9e6aeb6489580fab7a1f373">asPath</a> ()</td></tr>
@@ -404,9 +406,38 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return pointer to this object if it is an <a class="el" href="classipe_1_1_group.html" title="The group object. ">Group</a>, 0 otherwise. </p>
+<p>Return pointer to this object if it is an <a class="el" href="classipe_1_1_group.html" title="The group object. ">Group</a>, nullptr otherwise. </p>
 
 <p>Reimplemented in <a class="el" href="classipe_1_1_group.html#a05ab41252d580253a9022fde48d0c6b8">ipe::Group</a>.</p>
+
+<p>Referenced by <a class="el" href="classipe_1_1_pdf_writer.html#aaddfec5cc4d0d0c2393ade836bae551a">ipe::PdfWriter::createPageView()</a>, and <a class="el" href="classipe_1_1_document.html#ae84fc27ae6ff7c3db16ec0c451d6000e">ipe::Document::saveAsXml()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3af9ed85ce0f70b8b71e70d6e64e2c6e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classipe_1_1_group.html">Group</a> * Object::asGroup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return pointer to this object if it is an <a class="el" href="classipe_1_1_group.html" title="The group object. ">Group</a>, nullptr otherwise. </p>
+
+<p>Reimplemented in <a class="el" href="classipe_1_1_group.html#a7926d4bd0110e22faa94668b08cc89b7">ipe::Group</a>.</p>
 
 </div>
 </div>
@@ -431,7 +462,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return pointer to this object if it is an <a class="el" href="classipe_1_1_text.html" title="The text object. ">Text</a>, 0 otherwise. </p>
+<p>Return pointer to this object if it is an <a class="el" href="classipe_1_1_text.html" title="The text object. ">Text</a>, nullptr otherwise. </p>
 
 <p>Reimplemented in <a class="el" href="classipe_1_1_text.html#ae9a04097eec103c55fb18f32bea54321">ipe::Text</a>.</p>
 
@@ -458,7 +489,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return pointer to this object if it is an <a class="el" href="classipe_1_1_path.html" title="The path object (polylines, polygons, and generalizations). ">Path</a>, 0 otherwise. </p>
+<p>Return pointer to this object if it is an <a class="el" href="classipe_1_1_path.html" title="The path object (polylines, polygons, and generalizations). ">Path</a>, nullptr otherwise. </p>
 
 <p>Reimplemented in <a class="el" href="classipe_1_1_path.html#aebf144e887c6e05e5ea90f86ae3805d9">ipe::Path</a>.</p>
 
@@ -485,7 +516,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return pointer to this object if it is an <a class="el" href="classipe_1_1_image.html" title="The image object. ">Image</a> , 0 otherwise. </p>
+<p>Return pointer to this object if it is an <a class="el" href="classipe_1_1_image.html" title="The image object. ">Image</a> , nullptr otherwise. </p>
 
 <p>Reimplemented in <a class="el" href="classipe_1_1_image.html#a1456dc9daf63abd4176fca1aa7da088b">ipe::Image</a>.</p>
 
@@ -512,7 +543,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return pointer to this object if it is an Ref, 0 otherwise. </p>
+<p>Return pointer to this object if it is an Ref, nullptr otherwise. </p>
 
 <p>Reimplemented in <a class="el" href="classipe_1_1_reference.html#ae54a37b223673a88b189da83f22fbc11">ipe::Reference</a>.</p>
 
@@ -732,11 +763,11 @@ Protected Attributes</h2></td></tr>
 <p>Set an attribute on this object. </p>
 <p>Returns true if an attribute was actually changed. </p>
 
-<p>Reimplemented in <a class="el" href="classipe_1_1_path.html#a4d0ca0245ad2e2a3d629fc13bff8ea2f">ipe::Path</a>, <a class="el" href="classipe_1_1_group.html#ab8d29e9c886a5cb9d48c721fbe5682c6">ipe::Group</a>, <a class="el" href="classipe_1_1_reference.html#a12215e515b25425a72aafede3c51f59e">ipe::Reference</a>, and <a class="el" href="classipe_1_1_text.html#a6cb664e8126bdbc37a3ea9a3b59e4f57">ipe::Text</a>.</p>
+<p>Reimplemented in <a class="el" href="classipe_1_1_group.html#ab8d29e9c886a5cb9d48c721fbe5682c6">ipe::Group</a>, <a class="el" href="classipe_1_1_path.html#a4d0ca0245ad2e2a3d629fc13bff8ea2f">ipe::Path</a>, <a class="el" href="classipe_1_1_reference.html#a12215e515b25425a72aafede3c51f59e">ipe::Reference</a>, and <a class="el" href="classipe_1_1_text.html#a6cb664e8126bdbc37a3ea9a3b59e4f57">ipe::Text</a>.</p>
 
 <p>References <a class="el" href="group__attr.html#ggac50c1b1c913f9551a97e37ef29eb462fa32bd3ed7375ab1c692b2fbda437372ee">ipe::EPropPinned</a>, <a class="el" href="group__attr.html#ggac50c1b1c913f9551a97e37ef29eb462fa2794e7b14a6c755fcd73ce69922ab16d">ipe::EPropTransformations</a>, <a class="el" href="classipe_1_1_object.html#ac325c5659a84dbf84f449f329e73e2a4">iPinned</a>, <a class="el" href="classipe_1_1_attribute.html#a2f1c282c640a077e8c4f33a474877742">ipe::Attribute::isEnum()</a>, <a class="el" href="classipe_1_1_object.html#acbf300bc7610b41bdd7313429a938bfb">iTransformations</a>, <a class="el" href="classipe_1_1_attribute.html#a67be3c606710a7a3558fd295d98dfbd7">ipe::Attribute::pinned()</a>, and <a class="el" href="classipe_1_1_attribute.html#ac9ec21fe2fb9b490ff6eb1b9e400652b">ipe::Attribute::transformations()</a>.</p>
 
-<p>Referenced by <a class="el" href="classipe_1_1_text.html#a6cb664e8126bdbc37a3ea9a3b59e4f57">ipe::Text::setAttribute()</a>, <a class="el" href="classipe_1_1_reference.html#a12215e515b25425a72aafede3c51f59e">ipe::Reference::setAttribute()</a>, <a class="el" href="classipe_1_1_group.html#ab8d29e9c886a5cb9d48c721fbe5682c6">ipe::Group::setAttribute()</a>, <a class="el" href="classipe_1_1_path.html#a4d0ca0245ad2e2a3d629fc13bff8ea2f">ipe::Path::setAttribute()</a>, and <a class="el" href="classipe_1_1_page.html#a0d31288f718e0ed731f562a67740dc84">ipe::Page::setAttribute()</a>.</p>
+<p>Referenced by <a class="el" href="classipe_1_1_text.html#a6cb664e8126bdbc37a3ea9a3b59e4f57">ipe::Text::setAttribute()</a>, <a class="el" href="classipe_1_1_reference.html#a12215e515b25425a72aafede3c51f59e">ipe::Reference::setAttribute()</a>, <a class="el" href="classipe_1_1_path.html#a4d0ca0245ad2e2a3d629fc13bff8ea2f">ipe::Path::setAttribute()</a>, <a class="el" href="classipe_1_1_group.html#ab8d29e9c886a5cb9d48c721fbe5682c6">ipe::Group::setAttribute()</a>, and <a class="el" href="classipe_1_1_page.html#a0d31288f718e0ed731f562a67740dc84">ipe::Page::setAttribute()</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1189,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Check all symbolic attributes. </p>
 
-<p>Reimplemented in <a class="el" href="classipe_1_1_path.html#a9eabfc43680c2059fac88f3d715da53c">ipe::Path</a>, <a class="el" href="classipe_1_1_group.html#aa67e39c5a33cafb63a541ac93dd36bcc">ipe::Group</a>, <a class="el" href="classipe_1_1_reference.html#aa6c64267196ff639c69f210c397d1ad8">ipe::Reference</a>, and <a class="el" href="classipe_1_1_text.html#a04890958e046a71e75987c1071ef3197">ipe::Text</a>.</p>
+<p>Reimplemented in <a class="el" href="classipe_1_1_group.html#aa67e39c5a33cafb63a541ac93dd36bcc">ipe::Group</a>, <a class="el" href="classipe_1_1_path.html#a9eabfc43680c2059fac88f3d715da53c">ipe::Path</a>, <a class="el" href="classipe_1_1_reference.html#aa6c64267196ff639c69f210c397d1ad8">ipe::Reference</a>, and <a class="el" href="classipe_1_1_text.html#a04890958e046a71e75987c1071ef3197">ipe::Text</a>.</p>
 
 <p>Referenced by <a class="el" href="classipe_1_1_document.html#ac97b90e5f4008bb3df5632f967728c12">ipe::Document::checkStyle()</a>.</p>
 

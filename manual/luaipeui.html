@@ -87,11 +87,12 @@ Dialogs</h1>
 <p>Other dialogs can be constructed programmatically. A dialog consists of various elements layed out in a grid, and a row of buttons underneath. Create the dialog by adding elements using 'add', and filling the button row using 'addButton'. The 'action' for 'addButton' can be one of the strings "accept" or "reject", or a Lua method. </p>
 <pre class="fragment">d = ipeui.Dialog(parent, window_title)
 
+-- row == -1 means last row, row == 0 means start new row
 d:add(name, what, options, row, column, row_span, column_span)
 d:addButton(name, caption, action)
 
 d:setStretch("row", row_number, stretch_factor)
-d:setStretch("column", row_number, stretch_factor)
+d:setStretch("column", column_number, stretch_factor)
 
 d:set(name, value)
 value = d:get(name)

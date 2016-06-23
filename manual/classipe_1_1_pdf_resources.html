@@ -58,6 +58,11 @@
 
 <p><code>#include &lt;iperesources.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structipe_1_1_pdf_resources_1_1_s_page_number.html">SPageNumber</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa52c136aede18a58adab040ab2bd58df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#aa52c136aede18a58adab040ab2bd58df">collect</a> (const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *dict, <a class="el" href="classipe_1_1_pdf_file.html">PdfFile</a> *file)</td></tr>
@@ -68,6 +73,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa2f14069f80f3b4851ac0b274c60b298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a337890754051cfdbd9ee207b9a711da7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a337890754051cfdbd9ee207b9a711da7">getFont</a> (int id) const noexcept</td></tr>
 <tr class="separator:a337890754051cfdbd9ee207b9a711da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ae1f32cea1482ddf4b63a9dc11b86d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#aa1ae1f32cea1482ddf4b63a9dc11b86d">addPageNumber</a> (<a class="el" href="structipe_1_1_pdf_resources_1_1_s_page_number.html">SPageNumber</a> &amp;pn) noexcept</td></tr>
+<tr class="separator:aa1ae1f32cea1482ddf4b63a9dc11b86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c1e7257600e44914ccefe0e9b099a7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_text.html">Text</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#ab9c1e7257600e44914ccefe0e9b099a7">pageNumber</a> (int page, int view) const noexcept</td></tr>
+<tr class="separator:ab9c1e7257600e44914ccefe0e9b099a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64ba3be399b6c628073e8206b9bda262"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a64ba3be399b6c628073e8206b9bda262">embedSequence</a> () const noexcept</td></tr>
 <tr class="separator:a64ba3be399b6c628073e8206b9bda262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -173,6 +182,70 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>References <a class="el" href="classipe_1_1_pdf_obj.html#a83aa385423b91ff923857ab3da0ac483">ipe::PdfObj::dict()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1ae1f32cea1482ddf4b63a9dc11b86d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PdfResources::addPageNumber </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structipe_1_1_pdf_resources_1_1_s_page_number.html">SPageNumber</a> &amp;&#160;</td>
+          <td class="paramname"><em>pn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="classipe_1_1_latex.html#afa5651f10c0ceee478cab12e291901ed">ipe::Latex::addPageNumber()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9c1e7257600e44914ccefe0e9b099a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classipe_1_1_text.html">Text</a> * PdfResources::pageNumber </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classipe_1_1_text.html#a2df78233bd690849121e0f5796b0bdf3">ipe::Text::text()</a>.</p>
+
+<p>Referenced by <a class="el" href="classipe_1_1_canvas_base.html#a2e1a8969130d937322372c8fa635f3c2">ipe::CanvasBase::drawObjects()</a>.</p>
 
 </div>
 </div>

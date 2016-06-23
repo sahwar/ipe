@@ -21,36 +21,40 @@
 	  id CDATA #REQUIRED
 	  width CDATA #REQUIRED
 	  height CDATA #REQUIRED
-	  ColorSpace (DeviceGray|DeviceRGB|DeviceCMYK) #REQUIRED
+	  ColorSpace (DeviceGray|DeviceRGB|DeviceCMYK) "DeviceRGB"
 	  BitsPerComponent CDATA #FIXED "8"
 	  ColorKey CDATA #IMPLIED
 	  length CDATA #IMPLIED
 	  encoding (base64) #IMPLIED
 	  Filter (FlateDecode|DCTDecode) #IMPLIED >
 
-<!ELEMENT page (layer*,view*,(group|image|use|text|path)*)>
+<!ELEMENT page (notes?,layer*,view*,(group|image|use|text|path)*)>
 <!ATTLIST page
 	  title CDATA #IMPLIED
 	  section CDATA #IMPLIED
-	  subsection CDATA #IMPLIED >
+	  subsection CDATA #IMPLIED
+	  marked (yes|no) "yes" >
+
+<!ELEMENT notes (#PCDATA)>
 
 <!ELEMENT layer EMPTY>
 <!ATTLIST layer
 	  name CDATA #REQUIRED
-	  edit (yes|no) #IMPLIED >
+	  edit (yes|no) "yes" >
 
 <!ELEMENT view EMPTY>
 <!ATTLIST view
 	  layers CDATA #REQUIRED
 	  active CDATA #REQUIRED
-	  effect CDATA "normal" >
+	  effect CDATA "normal" 
+	  marked (yes|no) "yes" >
 
 <!ELEMENT group ((group|image|use|text|path)*)>
 <!ATTLIST group
 	  layer CDATA #IMPLIED
 	  matrix CDATA "1 0 0 1 0 0"
 	  pin (yes|h|v) #IMPLIED
-	  transformations (affine|rigid|translations) #IMPLIED
+	  transformations (affine|rigid|translations) "affine"
 	  clip CDATA #IMPLIED >
 
 <!ELEMENT image (#PCDATA)>
@@ -58,12 +62,12 @@
 	  layer CDATA #IMPLIED
 	  matrix CDATA "1 0 0 1 0 0"
 	  pin (yes|h|v) #IMPLIED
-	  transformations (affine|rigid|translations) #IMPLIED
+	  transformations (affine|rigid|translations) "affine"
+	  rect CDATA #REQUIRED
 	  bitmap CDATA #IMPLIED
-	  rect CDATA #IMPLIED
 	  width CDATA #IMPLIED
 	  height CDATA #IMPLIED
-	  ColorSpace (DeviceGray|DeviceRGB|DeviceCMYK) #IMPLIED
+	  ColorSpace (DeviceGray|DeviceRGB|DeviceCMYK) "DeviceRGB"
 	  BitsPerComponent CDATA #FIXED "8"
 	  length CDATA #IMPLIED
 	  encoding (base64) #IMPLIED
@@ -74,7 +78,7 @@
 	  layer CDATA #IMPLIED
 	  matrix CDATA "1 0 0 1 0 0"
 	  pin (yes|h|v) #IMPLIED
-	  transformations (affine|rigid|translations) #IMPLIED
+	  transformations (affine|rigid|translations) "affine"
 	  name CDATA #REQUIRED
 	  size CDATA #IMPLIED
 	  pos CDATA #IMPLIED
@@ -87,8 +91,8 @@
 	  layer CDATA #IMPLIED
 	  matrix CDATA "1 0 0 1 0 0"
 	  pin (yes|h|v) #IMPLIED
-	  transformations (affine|rigid|translations) #IMPLIED
-	  type (label|minipage) #REQUIRED
+	  transformations (affine|rigid|translations) "affine"
+	  type (label|minipage) "label"
 	  stroke CDATA "black"
 	  size CDATA #IMPLIED
 	  pos CDATA #REQUIRED
@@ -105,7 +109,7 @@
 	  layer CDATA #IMPLIED
 	  matrix CDATA "1 0 0 1 0 0"
 	  pin (yes|h|v) #IMPLIED
-	  transformations (affine|rigid|translations) #IMPLIED
+	  transformations (affine|rigid|translations) "affine"
 	  stroke CDATA #IMPLIED
 	  fill CDATA #IMPLIED
 	  tiling CDATA "normal"
@@ -119,7 +123,7 @@
 	  arrow CDATA #IMPLIED
 	  rarrow CDATA #IMPLIED >
 
-<!ELEMENT ipestyle ((symbol|preamble|cmap|textstyle|layout|
+<!ELEMENT ipestyle ((bitmap|symbol|preamble|cmap|textstyle|layout|textpad|
 	  titlestyle|pagenumberstyle|pathstyle|gradient|tiling|effect|
 	  color|dashstyle|pen|textsize|textstretch|opacity|
 	  symbolsize|arrowsize|gridsize|anglesize)*)>
@@ -164,7 +168,7 @@
 <!ELEMENT gradient (stop)+>
 <!ATTLIST gradient
 	  name CDATA #REQUIRED
-	  type (axial|radial) #REQUIRED
+	  type (axial|radial) "axial"
 	  extend (yes|no) "no"
 	  matrix CDATA "1 0 0 1 0 0"
 	  coords CDATA #REQUIRED>
@@ -198,6 +202,13 @@
 	  crop (yes|no) "yes"
 	  skip CDATA #IMPLIED>
 
+<!ELEMENT textpad EMPTY>
+<!ATTLIST textpad 
+	  left CDATA #REQUIRED
+	  right CDATA #REQUIRED
+	  top CDATA #REQUIRED
+	  bottom CDATA #REQUIRED>
+
 <!ELEMENT titlestyle EMPTY>
 <!ATTLIST titlestyle
 	  pos CDATA #REQUIRED
@@ -206,11 +217,13 @@
 	  halign CDATA #IMPLIED
 	  valign CDATA #IMPLIED>
 
-<!ELEMENT pagenumberstyle EMPTY>
+<!ELEMENT pagenumberstyle (#PCDATA)>
 <!ATTLIST pagenumberstyle
 	  pos CDATA #REQUIRED
-	  color CDATA #REQUIRED
-	  size CDATA #REQUIRED>
+	  color CDATA "black"
+	  size CDATA "normal"
+	  valign (top|bottom|center|baseline) "baseline"
+	  halign (left|right|center) "left">
 
 <!ELEMENT pathstyle EMPTY>
 <!ATTLIST pathstyle 
@@ -220,6 +233,7 @@
 
 <!ELEMENT effect EMPTY>
 <!ATTLIST effect
+	  name CDATA #REQUIRED
 	  duration CDATA #IMPLIED
 	  transition CDATA #IMPLIED
 	  effect CDATA #REQUIRED>
