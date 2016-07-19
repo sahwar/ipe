@@ -59,12 +59,12 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af7a325f5c61057cf13c655919c4673c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_face.html#af7a325f5c61057cf13c655919c4673c1">Face</a> (int id, const <a class="el" href="classipe_1_1_pdf_resources.html">PdfResources</a> *resources) noexcept</td></tr>
-<tr class="separator:af7a325f5c61057cf13c655919c4673c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c4bf28ecf8bb802df16cb170d033fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_face.html#a03c4bf28ecf8bb802df16cb170d033fa">Face</a> (const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *d, const <a class="el" href="classipe_1_1_pdf_resources.html">PdfResources</a> *resources) noexcept</td></tr>
+<tr class="separator:a03c4bf28ecf8bb802df16cb170d033fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b274a3251ecc16ee68ddc8f7207e79d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_face.html#a0b274a3251ecc16ee68ddc8f7207e79d">~Face</a> () noexcept</td></tr>
 <tr class="separator:a0b274a3251ecc16ee68ddc8f7207e79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea81fb086fe8367b79316a413c3c8d22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_face.html#aea81fb086fe8367b79316a413c3c8d22">matches</a> (int id) const noexcept</td></tr>
-<tr class="separator:aea81fb086fe8367b79316a413c3c8d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bde13dae4d530b63a0b88691c050053"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_face.html#a0bde13dae4d530b63a0b88691c050053">matches</a> (const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *d) const noexcept</td></tr>
+<tr class="separator:a0bde13dae4d530b63a0b88691c050053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88213c82a1b9dcc500580258d9c72454"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06">FontType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_face.html#a88213c82a1b9dcc500580258d9c72454">type</a> () const noexcept</td></tr>
 <tr class="separator:a88213c82a1b9dcc500580258d9c72454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab66997abed9aebf1c1b401e596baf837"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_face.html#ab66997abed9aebf1c1b401e596baf837">width</a> (int ch) const noexcept</td></tr>
@@ -77,7 +77,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A typeface (aka font), actually loaded (from a font file or PDF file). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af7a325f5c61057cf13c655919c4673c1"></a>
+<a class="anchor" id="a03c4bf28ecf8bb802df16cb170d033fa"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -87,8 +87,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">Face::Face </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
+          <td class="paramtype">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -109,7 +109,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classipe_1_1_pdf_obj.html#a3176173922b75ed7da480e206eb57910">ipe::PdfObj::array()</a>, <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a73d7ba8480764d8f4be9adee2418c82a">ipe::CIDType0</a>, <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a2c75648597d6bb85f9eacf3a3b8c10b9">ipe::CIDType2</a>, <a class="el" href="classipe_1_1_buffer.html#aa79d8c9968f9fdcf8cb1557ae002b640">ipe::Buffer::data()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a83aa385423b91ff923857ab3da0ac483">ipe::PdfObj::dict()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#a7603322af37d8bfd3816cff90e647a55">ipe::PdfDict::get()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a490be6b53ae6579265786bdeb465a404">ipe::PdfObj::name()</a>, <a class="el" href="classipe_1_1_pdf_array.html#a26f320a64e2aaf9764ef72d60164c3ef">ipe::PdfArray::obj()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a6d8502595ee3e1386f29ad985d70745f">ipe::PdfObj::ref()</a>, <a class="el" href="classipe_1_1_buffer.html#ac8b9d71e475bc91837f87d8c835bd962">ipe::Buffer::size()</a>, <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a9bff7ccc79192952c13923baa8b14d01">ipe::Truetype</a>, <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a3fc8355f4568d0bc9fa60829e4db7ad8">ipe::Type1</a>, <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06ab4080bdf74febf04d578ff105cce9d3f">ipe::Unsupported</a>, <a class="el" href="classipe_1_1_pdf_name.html#afc0dab9bd0bb2fbf3f01f90f6dc505a6">ipe::PdfName::value()</a>, <a class="el" href="classipe_1_1_pdf_ref.html#a96de75b6c1b5536b7ebc841f5cf5dd9e">ipe::PdfRef::value()</a>, and <a class="el" href="classipe_1_1_string.html#a7a8bab5b55242851ca7b08cc527d294e">ipe::String::z()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_pdf_obj.html#a3176173922b75ed7da480e206eb57910">ipe::PdfObj::array()</a>, <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a73d7ba8480764d8f4be9adee2418c82a">ipe::CIDType0</a>, <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a2c75648597d6bb85f9eacf3a3b8c10b9">ipe::CIDType2</a>, <a class="el" href="classipe_1_1_buffer.html#aa79d8c9968f9fdcf8cb1557ae002b640">ipe::Buffer::data()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a83aa385423b91ff923857ab3da0ac483">ipe::PdfObj::dict()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a490be6b53ae6579265786bdeb465a404">ipe::PdfObj::name()</a>, <a class="el" href="classipe_1_1_pdf_array.html#a26f320a64e2aaf9764ef72d60164c3ef">ipe::PdfArray::obj()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a6d8502595ee3e1386f29ad985d70745f">ipe::PdfObj::ref()</a>, <a class="el" href="classipe_1_1_buffer.html#ac8b9d71e475bc91837f87d8c835bd962">ipe::Buffer::size()</a>, <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a9bff7ccc79192952c13923baa8b14d01">ipe::Truetype</a>, <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06a3fc8355f4568d0bc9fa60829e4db7ad8">ipe::Type1</a>, <a class="el" href="namespaceipe.html#a39cd6f4738bc944cbb17e8233ac9ab06ab4080bdf74febf04d578ff105cce9d3f">ipe::Unsupported</a>, <a class="el" href="classipe_1_1_pdf_name.html#afc0dab9bd0bb2fbf3f01f90f6dc505a6">ipe::PdfName::value()</a>, <a class="el" href="classipe_1_1_pdf_ref.html#a96de75b6c1b5536b7ebc841f5cf5dd9e">ipe::PdfRef::value()</a>, and <a class="el" href="classipe_1_1_string.html#a7a8bab5b55242851ca7b08cc527d294e">ipe::String::z()</a>.</p>
 
 </div>
 </div>
@@ -134,10 +134,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>References <a class="el" href="classipe_1_1_string.html#a7a8bab5b55242851ca7b08cc527d294e">ipe::String::z()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aea81fb086fe8367b79316a413c3c8d22"></a>
+<a class="anchor" id="a0bde13dae4d530b63a0b88691c050053"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -147,8 +149,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool ipe::Face::matches </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>

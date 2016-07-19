@@ -55,7 +55,9 @@
 	  matrix CDATA "1 0 0 1 0 0"
 	  pin (yes|h|v) #IMPLIED
 	  transformations (affine|rigid|translations) "affine"
-	  clip CDATA #IMPLIED >
+	  clip CDATA #IMPLIED 
+	  url CDATA #IMPLIED
+	  decoration CDATA #IMPLIED >
 
 <!ELEMENT image (#PCDATA)>
 <!ATTLIST image 

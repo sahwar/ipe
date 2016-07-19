@@ -65,25 +65,51 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa52c136aede18a58adab040ab2bd58df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#aa52c136aede18a58adab040ab2bd58df">collect</a> (const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *dict, <a class="el" href="classipe_1_1_pdf_file.html">PdfFile</a> *file)</td></tr>
-<tr class="separator:aa52c136aede18a58adab040ab2bd58df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1496158d6aedb7afe88c784d2af85404"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a1496158d6aedb7afe88c784d2af85404">PdfResources</a> ()</td></tr>
+<tr class="separator:a1496158d6aedb7afe88c784d2af85404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f288a27bc57b49d24f65f6219b68f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a26f288a27bc57b49d24f65f6219b68f9">collect</a> (const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *resources, <a class="el" href="classipe_1_1_pdf_file.html">PdfFile</a> *file)</td></tr>
+<tr class="separator:a26f288a27bc57b49d24f65f6219b68f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24c4e46ed9bd1a21f7beeb00cf8dbe95"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_pdf_obj.html">PdfObj</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a24c4e46ed9bd1a21f7beeb00cf8dbe95">object</a> (int num) const noexcept</td></tr>
 <tr class="separator:a24c4e46ed9bd1a21f7beeb00cf8dbe95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2f14069f80f3b4851ac0b274c60b298"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#aa2f14069f80f3b4851ac0b274c60b298">get</a> (<a class="el" href="classipe_1_1_string.html">String</a> key) const noexcept</td></tr>
-<tr class="separator:aa2f14069f80f3b4851ac0b274c60b298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a337890754051cfdbd9ee207b9a711da7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a337890754051cfdbd9ee207b9a711da7">getFont</a> (int id) const noexcept</td></tr>
-<tr class="separator:a337890754051cfdbd9ee207b9a711da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d3cf8bfa3aae1bb4e6d41e6fd98946"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a53d3cf8bfa3aae1bb4e6d41e6fd98946">resourcesOfKind</a> (<a class="el" href="classipe_1_1_string.html">String</a> kind) const noexcept</td></tr>
+<tr class="separator:a53d3cf8bfa3aae1bb4e6d41e6fd98946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7146231068a50e773b97255814bca8c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#ab7146231068a50e773b97255814bca8c">findResource</a> (<a class="el" href="classipe_1_1_string.html">String</a> kind, <a class="el" href="classipe_1_1_string.html">String</a> name) const noexcept</td></tr>
+<tr class="separator:ab7146231068a50e773b97255814bca8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c6408588416ef8f7add865f641b558"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#ab2c6408588416ef8f7add865f641b558">findResource</a> (const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *xf, <a class="el" href="classipe_1_1_string.html">String</a> kind, <a class="el" href="classipe_1_1_string.html">String</a> name) const noexcept</td></tr>
+<tr class="separator:ab2c6408588416ef8f7add865f641b558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89112a61a1bc2d904a2247206366cd32"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_pdf_obj.html">PdfObj</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a89112a61a1bc2d904a2247206366cd32">getDeep</a> (const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *d, <a class="el" href="classipe_1_1_string.html">String</a> key) const noexcept</td></tr>
+<tr class="separator:a89112a61a1bc2d904a2247206366cd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3744e0348c445191b1f86fa802cbe147"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a3744e0348c445191b1f86fa802cbe147">getDict</a> (const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *d, <a class="el" href="classipe_1_1_string.html">String</a> key) const noexcept</td></tr>
+<tr class="separator:a3744e0348c445191b1f86fa802cbe147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ae1f32cea1482ddf4b63a9dc11b86d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#aa1ae1f32cea1482ddf4b63a9dc11b86d">addPageNumber</a> (<a class="el" href="structipe_1_1_pdf_resources_1_1_s_page_number.html">SPageNumber</a> &amp;pn) noexcept</td></tr>
 <tr class="separator:aa1ae1f32cea1482ddf4b63a9dc11b86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9c1e7257600e44914ccefe0e9b099a7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_text.html">Text</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#ab9c1e7257600e44914ccefe0e9b099a7">pageNumber</a> (int page, int view) const noexcept</td></tr>
 <tr class="separator:ab9c1e7257600e44914ccefe0e9b099a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64ba3be399b6c628073e8206b9bda262"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a64ba3be399b6c628073e8206b9bda262">embedSequence</a> () const noexcept</td></tr>
 <tr class="separator:a64ba3be399b6c628073e8206b9bda262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df069496f10fef84e931ef15e98f347"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_pdf_resources.html#a1df069496f10fef84e931ef15e98f347">show</a> () const noexcept</td></tr>
+<tr class="separator:a1df069496f10fef84e931ef15e98f347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>All the resources needed by the text objects in the document. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa52c136aede18a58adab040ab2bd58df"></a>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a1496158d6aedb7afe88c784d2af85404"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PdfResources::PdfResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a26f288a27bc57b49d24f65f6219b68f9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -91,7 +117,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">bool PdfResources::collect </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td>
-          <td class="paramname"><em>dict</em>, </td>
+          <td class="paramname"><em>resources</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -107,7 +133,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classipe_1_1_pdf_dict.html#add9074b4888540707e84f102739f61b2">ipe::PdfDict::count()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a83aa385423b91ff923857ab3da0ac483">ipe::PdfObj::dict()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#a7603322af37d8bfd3816cff90e647a55">ipe::PdfDict::get()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#a13ec23f71743e4313fbe61715023c6b4">ipe::PdfDict::key()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a490be6b53ae6579265786bdeb465a404">ipe::PdfObj::name()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#aa35df36c4ccb3713af6fa4eb84da9ed9">ipe::PdfObj::number()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a6d8502595ee3e1386f29ad985d70745f">ipe::PdfObj::ref()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#aca2a1c1b736f0659176b84109cfd4fd3">ipe::PdfObj::repr()</a>, <a class="el" href="classipe_1_1_string.html#a50af6219ee8c0f539e887514a98bcfbc">ipe::String::substr()</a>, <a class="el" href="classipe_1_1_pdf_number.html#a0c71c8d72391429de0bf8135a92f1544">ipe::PdfNumber::value()</a>, <a class="el" href="classipe_1_1_pdf_name.html#afc0dab9bd0bb2fbf3f01f90f6dc505a6">ipe::PdfName::value()</a>, <a class="el" href="classipe_1_1_pdf_ref.html#a96de75b6c1b5536b7ebc841f5cf5dd9e">ipe::PdfRef::value()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#a663c6891ca59d5f4b64f535223cca3af">ipe::PdfDict::value()</a>, and <a class="el" href="classipe_1_1_string.html#a7a8bab5b55242851ca7b08cc527d294e">ipe::String::z()</a>.</p>
+<p>Collect (recursively) all the given resources (of the one latex page). Takes ownership of all the scanned objects. </p>
+
+<p>References <a class="el" href="classipe_1_1_pdf_dict.html#add9074b4888540707e84f102739f61b2">ipe::PdfDict::count()</a>, <a class="el" href="classipe_1_1_pdf_obj.html#a83aa385423b91ff923857ab3da0ac483">ipe::PdfObj::dict()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#a7603322af37d8bfd3816cff90e647a55">ipe::PdfDict::get()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#a13ec23f71743e4313fbe61715023c6b4">ipe::PdfDict::key()</a>, <a class="el" href="classipe_1_1_pdf_dict.html#a663c6891ca59d5f4b64f535223cca3af">ipe::PdfDict::value()</a>, and <a class="el" href="classipe_1_1_string.html#a7a8bab5b55242851ca7b08cc527d294e">ipe::String::z()</a>.</p>
+
+<p>Referenced by <a class="el" href="classipe_1_1_latex.html#aace4351a64a0942e6c899bf8f0581ee9">ipe::Latex::readPdf()</a>.</p>
 
 </div>
 </div>
@@ -135,7 +165,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa2f14069f80f3b4851ac0b274c60b298"></a>
+<a class="anchor" id="a53d3cf8bfa3aae1bb4e6d41e6fd98946"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -143,11 +173,47 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> * PdfResources::get </td>
+          <td class="memname">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> * PdfResources::resourcesOfKind </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classipe_1_1_string.html">String</a>&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
+          <td class="paramname"><em>kind</em></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classipe_1_1_pdf_obj.html#a83aa385423b91ff923857ab3da0ac483">ipe::PdfObj::dict()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7146231068a50e773b97255814bca8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> * PdfResources::findResource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classipe_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classipe_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -159,7 +225,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a337890754051cfdbd9ee207b9a711da7"></a>
+<a class="anchor" id="ab2c6408588416ef8f7add865f641b558"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -167,11 +233,97 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> * PdfResources::getFont </td>
+          <td class="memname">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> * PdfResources::findResource </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td>
+          <td class="paramname"><em>xf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classipe_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classipe_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a89112a61a1bc2d904a2247206366cd32"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classipe_1_1_pdf_obj.html">PdfObj</a> * PdfResources::getDeep </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classipe_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classipe_1_1_pdf_obj.html#a6d8502595ee3e1386f29ad985d70745f">ipe::PdfObj::ref()</a>, and <a class="el" href="classipe_1_1_pdf_ref.html#a96de75b6c1b5536b7ebc841f5cf5dd9e">ipe::PdfRef::value()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3744e0348c445191b1f86fa802cbe147"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> * PdfResources::getDict </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classipe_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -269,6 +421,31 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1df069496f10fef84e931ef15e98f347"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PdfResources::show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="classipe_1_1_document.html#a37bb25c828f2ecc0a7fdaa0465356511">ipe::Document::runLatex()</a>.</p>
 
 </div>
 </div>

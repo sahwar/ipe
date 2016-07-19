@@ -160,8 +160,11 @@ b:point(t)                -- point at value t
 v1, v2, v3, v4 = b:controlpoints()  -- returns all four control points
 b:bbox()
 t, p = b:snap(pos)
-b:intersects(s)           -- return intersection point or nil
-b:intersects(l)
+
+-- intersections: 
+-- x is line, segment, or bezier
+-- returns table of intersection points
+b:intersect(x)
 </pre><h1><a class="anchor" id="luaarc"></a>
 Arc</h1>
 <p><em><a class="el" href="classipe_1_1_arc.html" title="An arc of an ellipse. ">ipe.Arc</a></em> binds <a class="el" href="classipe_1_1_arc.html" title="An arc of an ellipse. ">ipe::Arc</a>. It has the following methods:</p>
@@ -175,8 +178,11 @@ a:bbox()
 a:matrix()
 a:isEllipse() 
 alpha, p = a:snap(pos)
-a:intersects(s)           -- return intersection point or nil
-a:intersects(l)
+
+-- intersections: 
+-- x is line, segment, arc, or bezier
+-- returns table of intersection points
+a:intersect(x)
 </pre> </div></div><!-- contents -->
 <hr>
 </body></html>

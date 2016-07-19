@@ -62,12 +62,14 @@
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac49e1c3974a649f120cfb46feb221d33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_fonts.html#ac49e1c3974a649f120cfb46feb221d33">~Fonts</a> ()</td></tr>
 <tr class="separator:ac49e1c3974a649f120cfb46feb221d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e947652049472d6b68d72197c11cc35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classipe_1_1_face.html">Face</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_fonts.html#a1e947652049472d6b68d72197c11cc35">getFace</a> (int id)</td></tr>
-<tr class="separator:a1e947652049472d6b68d72197c11cc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4195b16148ccdf2d514d4039be524443"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classipe_1_1_face.html">Face</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_fonts.html#a4195b16148ccdf2d514d4039be524443">getFace</a> (const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *d)</td></tr>
+<tr class="separator:a4195b16148ccdf2d514d4039be524443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae772ced4b26ab3449b0ebdb3d375cbf8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_pdf_resources.html">PdfResources</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_fonts.html#ae772ced4b26ab3449b0ebdb3d375cbf8">resources</a> () const noexcept</td></tr>
+<tr class="separator:ae772ced4b26ab3449b0ebdb3d375cbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7df164ecade7308f05c36ebf4099fba7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classipe_1_1_fonts.html">Fonts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_fonts.html#a7df164ecade7308f05c36ebf4099fba7">New</a> (const <a class="el" href="classipe_1_1_pdf_resources.html">PdfResources</a> *resources)</td></tr>
+<tr class="memitem:a7df164ecade7308f05c36ebf4099fba7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classipe_1_1_fonts.html">Fonts</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_fonts.html#a7df164ecade7308f05c36ebf4099fba7">New</a> (const <a class="el" href="classipe_1_1_pdf_resources.html">PdfResources</a> *<a class="el" href="classipe_1_1_fonts.html#ae772ced4b26ab3449b0ebdb3d375cbf8">resources</a>)</td></tr>
 <tr class="separator:a7df164ecade7308f05c36ebf4099fba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af91c9c504c3441a3994ab28e336e251b"><td class="memItemLeft" align="right" valign="top">static cairo_font_face_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_fonts.html#af91c9c504c3441a3994ab28e336e251b">screenFont</a> ()</td></tr>
 <tr class="separator:af91c9c504c3441a3994ab28e336e251b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,15 +123,15 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1e947652049472d6b68d72197c11cc35"></a>
+<a class="anchor" id="a4195b16148ccdf2d514d4039be524443"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classipe_1_1_face.html">Face</a> * Fonts::getFace </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classipe_1_1_pdf_dict.html">PdfDict</a> *&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -184,6 +186,29 @@ Static Public Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae772ced4b26ab3449b0ebdb3d375cbf8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classipe_1_1_pdf_resources.html">PdfResources</a>* ipe::Fonts::resources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -139,6 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8216a30aeea047dc34aae4a6136206c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa67e39c5a33cafb63a541ac93dd36bcc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_group.html#aa67e39c5a33cafb63a541ac93dd36bcc">checkStyle</a> (const <a class="el" href="classipe_1_1_cascade.html">Cascade</a> *sheet, <a class="el" href="group__attr.html#ga724109aa4dbab072ea067cc5ed471e02">AttributeSeq</a> &amp;seq) const </td></tr>
 <tr class="separator:aa67e39c5a33cafb63a541ac93dd36bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e161a9d7bc58e11069f08f17a59d00f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classipe_1_1_attribute.html">Attribute</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_group.html#a7e161a9d7bc58e11069f08f17a59d00f">getAttribute</a> (<a class="el" href="group__attr.html#gac50c1b1c913f9551a97e37ef29eb462f">Property</a> prop) const noexcept</td></tr>
+<tr class="separator:a7e161a9d7bc58e11069f08f17a59d00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8d29e9c886a5cb9d48c721fbe5682c6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_group.html#ab8d29e9c886a5cb9d48c721fbe5682c6">setAttribute</a> (<a class="el" href="group__attr.html#gac50c1b1c913f9551a97e37ef29eb462f">Property</a> prop, <a class="el" href="classipe_1_1_attribute.html">Attribute</a> value)</td></tr>
 <tr class="separator:ab8d29e9c886a5cb9d48c721fbe5682c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classipe_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classipe_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classipe_1_1_object.html">ipe::Object</a></td></tr>
@@ -162,8 +164,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8c74a2e9259446790e0960acd2660d8b inherit pub_methods_classipe_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2c9d5f90db83532e39d36f2b88f8c9 inherit pub_methods_classipe_1_1_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classipe_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_object.html#ade2c9d5f90db83532e39d36f2b88f8c9">matrix</a> () const </td></tr>
 <tr class="separator:ade2c9d5f90db83532e39d36f2b88f8c9 inherit pub_methods_classipe_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af60ffe98d9699dc9463d33f64b7ef98e inherit pub_methods_classipe_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classipe_1_1_attribute.html">Attribute</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classipe_1_1_object.html#af60ffe98d9699dc9463d33f64b7ef98e">getAttribute</a> (<a class="el" href="group__attr.html#gac50c1b1c913f9551a97e37ef29eb462f">Property</a> prop)</td></tr>
-<tr class="separator:af60ffe98d9699dc9463d33f64b7ef98e inherit pub_methods_classipe_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -301,7 +301,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create empty group with these attributes (objects can be added later). </p>
 
-<p>References <a class="el" href="classipe_1_1_group.html#aff470568e57fc6ad7ddac83c4787e3a7">clip()</a>, <a class="el" href="group__attr.html#ggac026b82e69974d9eb0f6e83470183eb2a32577fcaa0be0c054d407d617fbafb24">ipe::ENoPin</a>, <a class="el" href="classipe_1_1_xml_attributes.html#ae3110184d4f5f531ef7262691a46189b">ipe::XmlAttributes::has()</a>, and <a class="el" href="classipe_1_1_shape.html#a8cd4850462017b536441c274c8d7b6e4">ipe::Shape::load()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_group.html#aff470568e57fc6ad7ddac83c4787e3a7">clip()</a>, <a class="el" href="group__attr.html#ggac026b82e69974d9eb0f6e83470183eb2a32577fcaa0be0c054d407d617fbafb24">ipe::ENoPin</a>, <a class="el" href="classipe_1_1_xml_attributes.html#ae3110184d4f5f531ef7262691a46189b">ipe::XmlAttributes::has()</a>, <a class="el" href="classipe_1_1_shape.html#a8cd4850462017b536441c274c8d7b6e4">ipe::Shape::load()</a>, and <a class="el" href="classipe_1_1_attribute.html#a71bb701d014c2c45062867027d9492c1">ipe::Attribute::NORMAL()</a>.</p>
 
 </div>
 </div>
@@ -529,7 +529,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classipe_1_1_object.html#ae0ff925816acb7f88791c8c828c1ae6d">ipe::Object</a>.</p>
 
-<p>References <a class="el" href="classipe_1_1_shape.html#a9de98473b431305ea1661af25c4c0157">ipe::Shape::countSubPaths()</a>, <a class="el" href="classipe_1_1_string.html#a6a7f4ac3af91acadf8640c30db92a41a">ipe::String::empty()</a>, <a class="el" href="classipe_1_1_stream.html#a24b435315918fb68f6326b0bde0d2aec">ipe::Stream::putXmlString()</a>, <a class="el" href="classipe_1_1_shape.html#a0d3f4c2dd97b4dd55e99ed97c254ea1d">ipe::Shape::save()</a>, <a class="el" href="classipe_1_1_object.html#a01be80d233f0641e6285e378a8f22dbf">ipe::Object::saveAttributesAsXml()</a>, and <a class="el" href="classipe_1_1_group.html#a8216a30aeea047dc34aae4a6136206c7">saveComponentsAsXml()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_shape.html#a9de98473b431305ea1661af25c4c0157">ipe::Shape::countSubPaths()</a>, <a class="el" href="classipe_1_1_string.html#a6a7f4ac3af91acadf8640c30db92a41a">ipe::String::empty()</a>, <a class="el" href="classipe_1_1_attribute.html#abe225a60676b1da5e9282067df93e1a6">ipe::Attribute::isNormal()</a>, <a class="el" href="classipe_1_1_stream.html#a24b435315918fb68f6326b0bde0d2aec">ipe::Stream::putXmlString()</a>, <a class="el" href="classipe_1_1_shape.html#a0d3f4c2dd97b4dd55e99ed97c254ea1d">ipe::Shape::save()</a>, <a class="el" href="classipe_1_1_object.html#a01be80d233f0641e6285e378a8f22dbf">ipe::Object::saveAttributesAsXml()</a>, <a class="el" href="classipe_1_1_group.html#a8216a30aeea047dc34aae4a6136206c7">saveComponentsAsXml()</a>, and <a class="el" href="classipe_1_1_attribute.html#a0ec2c91fbac3f326c7bf88ba112954e4">ipe::Attribute::string()</a>.</p>
 
 </div>
 </div>
@@ -559,7 +559,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classipe_1_1_object.html#a3638c929c74354b20be0fcbbddd58c78">ipe::Object</a>.</p>
 
-<p>References <a class="el" href="classipe_1_1_painter.html#a30d8809ffdfa7688968cbee3f552dbc4">ipe::Painter::addClipPath()</a>, <a class="el" href="classipe_1_1_group.html#a1b3cf3d3209e9a7ba2fe8421e69b2fa7">begin()</a>, <a class="el" href="classipe_1_1_shape.html#a9de98473b431305ea1661af25c4c0157">ipe::Shape::countSubPaths()</a>, <a class="el" href="classipe_1_1_shape.html#a238817d947d9b5bacbc521cc7060c617">ipe::Shape::draw()</a>, <a class="el" href="classipe_1_1_group.html#a100c056d720ae38f2e9aa353516bb584">end()</a>, <a class="el" href="classipe_1_1_object.html#ade2c9d5f90db83532e39d36f2b88f8c9">ipe::Object::matrix()</a>, <a class="el" href="classipe_1_1_painter.html#a580edf6422147229766c369a120f1db7">ipe::Painter::newPath()</a>, <a class="el" href="classipe_1_1_painter.html#ac7ebe896d097ab699cdb9d31ba000ef6">ipe::Painter::pop()</a>, <a class="el" href="classipe_1_1_painter.html#af25e95850260024efe0e9ae562446e5e">ipe::Painter::popMatrix()</a>, <a class="el" href="classipe_1_1_painter.html#a40e380c58116af0493bd4134ec7b4f93">ipe::Painter::push()</a>, <a class="el" href="classipe_1_1_painter.html#a8e24a6c7587bf54c2e1ed3b77840200b">ipe::Painter::pushMatrix()</a>, <a class="el" href="classipe_1_1_painter.html#afd5cf380a2a2e333f3522ddba0beee24">ipe::Painter::transform()</a>, <a class="el" href="classipe_1_1_object.html#a9e194c3fcc439104cff91e6559021fd8">ipe::Object::transformations()</a>, and <a class="el" href="classipe_1_1_painter.html#acbcf87b919ec5141dd68f96a1b40ebf1">ipe::Painter::untransform()</a>.</p>
+<p>References <a class="el" href="classipe_1_1_painter.html#a30d8809ffdfa7688968cbee3f552dbc4">ipe::Painter::addClipPath()</a>, <a class="el" href="classipe_1_1_group.html#a82e2f834cf45c4f75ded756546e3a83d">addToBBox()</a>, <a class="el" href="classipe_1_1_group.html#a1b3cf3d3209e9a7ba2fe8421e69b2fa7">begin()</a>, <a class="el" href="classipe_1_1_rect.html#a7947299490ac864280fb586e13c6c538">ipe::Rect::center()</a>, <a class="el" href="classipe_1_1_shape.html#a9de98473b431305ea1661af25c4c0157">ipe::Shape::countSubPaths()</a>, <a class="el" href="classipe_1_1_shape.html#a238817d947d9b5bacbc521cc7060c617">ipe::Shape::draw()</a>, <a class="el" href="classipe_1_1_group.html#a100c056d720ae38f2e9aa353516bb584">end()</a>, <a class="el" href="group__attr.html#gga5a80a01d23ba5b6e4f258faead3364c5a3b25184ef28ecf3cf4134741e2a46301">ipe::ETransformationsTranslations</a>, <a class="el" href="classipe_1_1_rect.html#a4c2135126b785f2b996e2f56716ac93a">ipe::Rect::height()</a>, <a class="el" href="classipe_1_1_attribute.html#abe225a60676b1da5e9282067df93e1a6">ipe::Attribute::isNormal()</a>, <a class="el" href="classipe_1_1_object.html#ade2c9d5f90db83532e39d36f2b88f8c9">ipe::Object::matrix()</a>, <a class="el" href="classipe_1_1_painter.html#aac05c8a50022769e5630e974189379fd">ipe::Painter::matrix()</a>, <a class="el" href="classipe_1_1_painter.html#a580edf6422147229766c369a120f1db7">ipe::Painter::newPath()</a>, <a class="el" href="classipe_1_1_painter.html#ac7ebe896d097ab699cdb9d31ba000ef6">ipe::Painter::pop()</a>, <a class="el" href="classipe_1_1_painter.html#af25e95850260024efe0e9ae562446e5e">ipe::Painter::popMatrix()</a>, <a class="el" href="classipe_1_1_painter.html#a40e380c58116af0493bd4134ec7b4f93">ipe::Painter::push()</a>, <a class="el" href="classipe_1_1_painter.html#a8e24a6c7587bf54c2e1ed3b77840200b">ipe::Painter::pushMatrix()</a>, <a class="el" href="classipe_1_1_painter.html#afd5cf380a2a2e333f3522ddba0beee24">ipe::Painter::transform()</a>, <a class="el" href="classipe_1_1_object.html#a9e194c3fcc439104cff91e6559021fd8">ipe::Object::transformations()</a>, <a class="el" href="classipe_1_1_painter.html#acbcf87b919ec5141dd68f96a1b40ebf1">ipe::Painter::untransform()</a>, and <a class="el" href="classipe_1_1_rect.html#a432f4d65f7845066b1f1e2e7d3fc64da">ipe::Rect::width()</a>.</p>
 
 </div>
 </div>
@@ -639,6 +639,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classipe_1_1_object.html#abf86969debbc7a737b0c689ae37d6595">ipe::Object</a>.</p>
 
 <p>References <a class="el" href="classipe_1_1_rect.html#acd711ffb91f8dd6d53639803ec7140a2">ipe::Rect::addRect()</a>, <a class="el" href="classipe_1_1_shape.html#a443e88a73089dae09c8c1ed4db14ca36">ipe::Shape::addToBBox()</a>, <a class="el" href="classipe_1_1_group.html#a1b3cf3d3209e9a7ba2fe8421e69b2fa7">begin()</a>, <a class="el" href="classipe_1_1_rect.html#a6ee45fba04de1d4f88ab379e4cd1ea55">ipe::Rect::clipTo()</a>, <a class="el" href="classipe_1_1_shape.html#a9de98473b431305ea1661af25c4c0157">ipe::Shape::countSubPaths()</a>, <a class="el" href="classipe_1_1_group.html#a100c056d720ae38f2e9aa353516bb584">end()</a>, and <a class="el" href="classipe_1_1_object.html#ade2c9d5f90db83532e39d36f2b88f8c9">ipe::Object::matrix()</a>.</p>
+
+<p>Referenced by <a class="el" href="classipe_1_1_group.html#a0db96800d6622e8f5e3c358fc83df729">draw()</a>.</p>
 
 </div>
 </div>
@@ -913,7 +915,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classipe_1_1_pdf_writer.html#aaddfec5cc4d0d0c2393ade836bae551a">ipe::PdfWriter::createPageView()</a>, <a class="el" href="classipe_1_1_document.html#ae84fc27ae6ff7c3db16ec0c451d6000e">ipe::Document::saveAsXml()</a>, and <a class="el" href="classipe_1_1_group.html#a7b0e0889564039f26c8f91b7890c9b77">setUrl()</a>.</p>
+<p>Referenced by <a class="el" href="classipe_1_1_pdf_writer.html#aaddfec5cc4d0d0c2393ade836bae551a">ipe::PdfWriter::createPageView()</a>, and <a class="el" href="classipe_1_1_group.html#a7b0e0889564039f26c8f91b7890c9b77">setUrl()</a>.</p>
 
 </div>
 </div>
@@ -1127,6 +1129,37 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7e161a9d7bc58e11069f08f17a59d00f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classipe_1_1_attribute.html">Attribute</a> Group::getAttribute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__attr.html#gac50c1b1c913f9551a97e37ef29eb462f">Property</a>&#160;</td>
+          <td class="paramname"><em>prop</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get setting of an attribute of this object. </p>
+<p>If object does not have this attribute, returnes "undefined" attribute. </p>
+
+<p>Reimplemented from <a class="el" href="classipe_1_1_object.html#adac997004edc9f92c6f056c27f1632e6">ipe::Object</a>.</p>
+
+<p>References <a class="el" href="group__attr.html#ggac50c1b1c913f9551a97e37ef29eb462fa407aaaf83f6ce639bc54ed4ea9ba4117">ipe::EPropDecoration</a>, and <a class="el" href="classipe_1_1_object.html#adac997004edc9f92c6f056c27f1632e6">ipe::Object::getAttribute()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab8d29e9c886a5cb9d48c721fbe5682c6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1163,7 +1196,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classipe_1_1_object.html#a3d631b23b9cb1965559a488722426331">ipe::Object</a>.</p>
 
-<p>References <a class="el" href="group__attr.html#ggac50c1b1c913f9551a97e37ef29eb462fa32bd3ed7375ab1c692b2fbda437372ee">ipe::EPropPinned</a>, <a class="el" href="group__attr.html#ggac50c1b1c913f9551a97e37ef29eb462fa2794e7b14a6c755fcd73ce69922ab16d">ipe::EPropTransformations</a>, and <a class="el" href="classipe_1_1_object.html#a3d631b23b9cb1965559a488722426331">ipe::Object::setAttribute()</a>.</p>
+<p>References <a class="el" href="group__attr.html#ggac50c1b1c913f9551a97e37ef29eb462fa407aaaf83f6ce639bc54ed4ea9ba4117">ipe::EPropDecoration</a>, <a class="el" href="group__attr.html#ggac50c1b1c913f9551a97e37ef29eb462fa32bd3ed7375ab1c692b2fbda437372ee">ipe::EPropPinned</a>, <a class="el" href="group__attr.html#ggac50c1b1c913f9551a97e37ef29eb462fa2794e7b14a6c755fcd73ce69922ab16d">ipe::EPropTransformations</a>, and <a class="el" href="classipe_1_1_object.html#a3d631b23b9cb1965559a488722426331">ipe::Object::setAttribute()</a>.</p>
 
 </div>
 </div>

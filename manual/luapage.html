@@ -115,11 +115,12 @@ p:setViewMarked(view, f)
 <pre class="fragment">p:countLayers()
 p:layers()        -- return table of layer names
 p:isLocked(layer)
-p:setLocked(layer)
+p:setLocked(layer, boolean)
 p:hasSnapping(layer)
 p:setSnapping(layer)
 p:renameLayer(oldname, newname)
-p:addLayer(name)     -- or create name if nil (name is returned)
+-- if layer is nil, automatically create name for new layer:
+p:addLayer(layer)     -- add layer at the end, return name of new layer
 p:removeLayer(layer)
 p:moveLayer(layer, target_index)
 p:visible(view, layer)   -- is layer visible in view?

@@ -84,6 +84,8 @@ obj:setClip(shape)
 obj:info()                   -- returns table about bitmap
 -- group objects only:
 elements = obj:elements()    -- returns table with clones of elements 
+element = obj:element(i)     -- returns clone of element #i
+obj:elementType(i)           -- returns type of element #i
 </pre><h1><a class="anchor" id="luaattributes"></a>
 Attributes</h1>
 <p>Attributes are represented in Lua as follows:</p>
@@ -123,6 +125,7 @@ transformableText -- boolean
 textstyle  -- symbolic
 opacity    -- symbolic
 tiling     -- symbolic
+decoration -- symbolic ("normal" means no decoration)
 minipage   -- boolean      
 width      -- number
 horizontalAlignment -- "left", "right", "hcenter"
@@ -143,7 +146,8 @@ Properties</h1>
     opacity, tiling, gradient, 
     horizontalalignment, verticalalignment,
     linejoin, linecap, fillrule, 
-    pinned, transformations, 
+    pinned, transformations,
+    decoration
 </pre><p>It is okay to set a property on objects that do not support them (for instance, "textsize" on a path object). Reading such properties results in an "undefined" return value.</p>
 <h1><a class="anchor" id="luashape"></a>
 Shape</h1>

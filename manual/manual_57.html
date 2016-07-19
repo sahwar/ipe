@@ -2,7 +2,7 @@
 <html>
 <!-- XML file produced from file: manual.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.3.1, Thu Jun 23 19:22:07 2016 -->
+     on Emacs 24.3.1, Tue Jul 19 19:58:30 2016 -->
 <head>
 <title>Ipe Manual -- 11.7 Importing other formats</title>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,
@@ -107,9 +107,10 @@ quite a number of programs that can export to FIG format, and
 exporting to Ipe.
 <p>However, <span class="tex-emph">figtoipe</span> is not quite complete.  The drawing models of
 FIG and Ipe are also somewhat different, which makes it impossible to
-properly render some FIG files in Ipe.  Ipe does not support depth
-ordering independent of grouping, pattern fill, and Postscript fonts.
-You may therefore have to edit the file after conversion.
+properly render some FIG files in Ipe.  In particular, Ipe does not
+support interpolation splines, depth ordering independent of grouping,
+pattern fill, and Postscript fonts.
+<p>You may therefore have to edit the file after conversion.
 <p><span class="tex-emph">figtoipe</span> is not part of the Ipe distribution. You can download
 and build it separately. <span class="tex-emph">figtoipe</span> is now maintained by
 Alexander B&uuml;rger.
