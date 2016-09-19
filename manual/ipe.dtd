@@ -194,7 +194,8 @@
 <!ATTLIST textstyle 
 	  name CDATA #REQUIRED
 	  begin CDATA #REQUIRED
-	  end CDATA #REQUIRED>
+	  end CDATA #REQUIRED
+	  type (label|minipage) "minipage">
 
 <!ELEMENT layout EMPTY>
 <!ATTLIST layout 
