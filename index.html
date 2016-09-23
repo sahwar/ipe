@@ -2,7 +2,7 @@
 <html>
 <!-- XML file produced from file: webpage.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.5.1, Fri Sep 23 11:44:51 2016 -->
+     on Emacs 24.5.1, Fri Sep 23 12:19:10 2016 -->
 <head>
 <title>The Ipe extensible drawing editor</title>
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width,
@@ -139,13 +139,17 @@ command line like this:
 <pre class="tex-verbatim">
 $ ./ipe-7.2.6-x86_64.AppImage 
 </pre>
-<p>If you want to use the Ipe command line tools, such as ipetoipe,
-iperender, or ipescript, just prefix the command with the AppImage:
+<p>If you want to use the Ipe command line tools, such as <span class="tex-emph">ipetoipe,
+  iperender, ipescript, pdftoipe, etc.</span>, just prefix the command with
+the AppImage:
 <pre class="tex-verbatim">
 $ ./ipe-7.2.6-x86_64.AppImage ipetoipe -pdf ~/test.ipe
 </pre>
-(Note that you'll have to use absolute paths for the filename
-arguments of all scripts.)
+Note that you will have to use <span class="tex-emph">absolute paths</span> for the filename
+arguments of all tools.  This is necessary because the AppImage must
+change directory before executing the code inside.
+<p>If you want to build an Ipe AppImage yourself, here is the
+<a href="https://github.com/otfried/ipe-tools/tree/master/appimage">recipe</a>.
 </div>
 <p><div
   data-role="collapsible" data-content-theme="c" data-theme="a">
