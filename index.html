@@ -2,7 +2,7 @@
 <html>
 <!-- XML file produced from file: webpage.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.5.1, Fri Sep 23 12:19:10 2016 -->
+     on Emacs 24.5.1, Fri Nov 18 16:22:38 2016 -->
 <head>
 <title>The Ipe extensible drawing editor</title>
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width,
@@ -148,6 +148,11 @@ $ ./ipe-7.2.6-x86_64.AppImage ipetoipe -pdf ~/test.ipe
 Note that you will have to use <span class="tex-emph">absolute paths</span> for the filename
 arguments of all tools.  This is necessary because the AppImage must
 change directory before executing the code inside.
+<p>If you want to start Ipe itself with command line parameters, you
+would have to say:
+<pre class="tex-verbatim">
+$ ./ipe-7.2.6-x86_64.AppImage ipe ~/test.ipe
+</pre>
 <p>If you want to build an Ipe AppImage yourself, here is the
 <a href="https://github.com/otfried/ipe-tools/tree/master/appimage">recipe</a>.
 </div>
