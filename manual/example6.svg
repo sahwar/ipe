@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="171pt" height="166pt" viewBox="0 0 171 166" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172pt" height="166pt" viewBox="0 0 172 166" version="1.1">
 <defs>
 <g>
 <symbol overflow="visible" id="glyph0-0">
@@ -20,15 +20,15 @@
 </g>
 </defs>
 <g id="surface1">
-<path style="fill-rule:evenodd;fill:rgb(80%,80%,80%);fill-opacity:1;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 223.889188 397.848744 L 284.631375 503.059681 L 350.830594 503.059681 L 382.729031 447.809681 L 324.3345 481.520619 L 305.881375 449.559681 L 362.686063 351.176869 L 304.729031 351.176869 Z M 223.889188 397.848744 " transform="matrix(1,0,0,-1,-212.272,503.2589)"/>
+<path style="fill-rule:evenodd;fill:rgb(80%,80%,80%);fill-opacity:1;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 223.889188 397.848744 L 284.631375 503.059681 L 350.830594 503.059681 L 382.729031 447.809681 L 324.3345 481.520619 L 305.881375 449.559681 L 362.686063 351.176869 L 304.729031 351.176869 Z M 223.889188 397.848744 " transform="matrix(1,0,0,-1,-211.272,503.2589)"/>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph0-1" x="0" y="105.1318"/>
+  <use xlink:href="#glyph0-1" x="1" y="105.1318"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph0-2" x="154.32188" y="145.7865"/>
+  <use xlink:href="#glyph0-2" x="155.32188" y="145.7865"/>
 </g>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
-  <use xlink:href="#glyph1-1" x="88.7766" y="164.3173"/>
+  <use xlink:href="#glyph1-1" x="89.7766" y="164.3173"/>
 </g>
 </g>
 </svg>

@@ -2,7 +2,7 @@
 <html>
 <!-- XML file produced from file: manual.tex
      using Hyperlatex v 15.02 (c) Otfried Cheong
-     on Emacs 24.5.1, Mon Sep 19 19:11:23 2016 -->
+     on Emacs 24.5.1, Fri Dec  9 21:21:10 2016 -->
 <head>
 <title>Ipe Manual -- 8.6 Environment variables</title>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,
@@ -66,18 +66,18 @@ dl.tex-description dd {
 <div data-role="content">
 <h2>8.6 Environment variables</h2>
 
-<p>Ipe, <span class="tex-emph">ipetoipe</span>, and <span class="tex-emph">iperender</span> respect the following
-environment variables:
+<p>Ipe, <span class="tex-emph">ipetoipe</span>, <span class="tex-emph">iperender</span>, and <span class="tex-emph">ipescript</span> respect
+the following environment variables:
 <dl class="tex-description"><dt><span class="tex-bf">IPELATEXDIR</span></dt><dd> the directory where Ipe runs Latex.
-<dt><span class="tex-bf">IPELATEXPATH</span></dt><dd> the directory that contains the <span class="tex-emph">pdflatex</span>
-  and <span class="tex-emph">xelatex</span> commands.  If not set, Ipe assumes the commands
-  are on your path.
+<dt><span class="tex-bf">IPELATEXPATH</span></dt><dd> the directory that contains the <span class="tex-emph">pdflatex</span>,
+  <span class="tex-emph">xelatex</span>, and <span class="tex-emph">lualatex</span> commands.  If not set, Ipe
+  assumes the commands are on your path.
 <dt><span class="tex-bf">IPEDEBUG</span></dt><dd> set to 1 for debugging output.
 <dt><span class="tex-bf">IPEANCIENTPDFTEX</span></dt><dd> set this variable to use Pdftex versions older
   than&nbsp;1.40.
 <dt><span class="tex-bf">IPETEXFORMAT</span></dt><dd> if set, Ipe will not call pdflatex but pdftex
-  requesting the pdflatex format (and similarly for xetex).  This is
-  needed to use cygwin's latex.
+  requesting the pdflatex format (and similarly for xetex and luatex).
+  This is needed to use cygwin's latex.
 </dl>
 <p>The Ipe program uses several additional environment variables:
 <dl class="tex-description"><dt><span class="tex-bf">EDITOR</span></dt><dd> external editor to use for editing text objects.
@@ -97,6 +97,15 @@ environment variables:
 <dt><span class="tex-bf">IPEICONDIR</span></dt><dd> directory containing icons for the Ipe user interface.
 <dt><span class="tex-bf">IPEDOCDIR</span></dt><dd> directory containing Ipe documentation.
 <dt><span class="tex-bf">IPELUAPATH</span></dt><dd> path for searching for Ipe Lua code.
+</dl>
+<p>The <span class="tex-emph">ipescript</span> program uses the following environment variable:
+<dl class="tex-description"><dt><span class="tex-bf">IPESCRIPTS</span></dt><dd> a list of directories, separated by semicolons on
+  Windows and colons otherwise, where <span class="tex-emph">ipescript</span> looks for
+  scripts. You can write &#95; (a single underscore) for the system-wide
+  script directory.  If this variable is not set, the default consists
+  of the current directory and the system-wide script directory, plus
+  <span class="tex-emph">~/.ipe/scripts</span> on Unix, plus
+  <span class="tex-emph">~/Library/Ipe/Scripts</span> on OS&nbsp;X.
 </dl>
 
 <h4 id="id1">ipe.conf</h4>
